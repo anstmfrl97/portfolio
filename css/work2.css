@@ -1,0 +1,3537 @@
+@font-face {
+    font-family: 'Jua';
+    font-display: swap;
+    src: url('../Font/Jua-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Pretendard_T";
+    font-weight: 100;
+    src: url('../Font/woff2/Pretendard-Thin.woff2') format('woff2'),
+        url('../Font/woff/Pretendard-Thin.woff') format('woff'),
+        url('../Font/ttf/Pretendard-Thin.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard_EL';
+    font-weight: 200;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('../Font/woff/Pretendard-ExtraLight.woff') format('woff'),
+        url('../Font/ttf/Pretendard-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard_L';
+    font-weight: 300;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Light.woff2') format('woff2'),
+        url('../Font/woff/Pretendard-Light.woff') format('woff'),
+        url('../Font/ttf/Pretendard-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard_R';
+    font-weight: 400;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Regular.woff2') format('woff2'), url('../Font/woff/Pretendard-Regular.woff') format('woff'), url('../Font/ttf/Pretendard-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard_M';
+    font-weight: 500;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Medium.woff2') format('woff2'), url('../Font/woff/Pretendard-Medium.woff') format('woff'), url('../Font/ttf/Pretendard-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard_SB';
+    font-weight: 600;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-SemiBold.woff2') format('woff2'), url('../Font/woff/Pretendard-SemiBold.woff') format('woff'), url('../Font/ttf/Pretendard-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Pretendard_B';
+    font-weight: 700;
+    font-display: swap;
+    src: url('../Font/woff2/Pretendard-Bold.woff2') format('woff2'),
+        url('../Font/woff/Pretendard-Bold.woff') format('woff'),
+        url('../Font/ttf/Pretendard-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'PC';
+    font-display: swap;
+    src: url('../Font/PyeongChangPeace-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HG';
+    font-display: swap;
+    src: url('../Font/Hakgyoansim\ Byeolbichhaneul\ OTF\ L.otf') format('opentype'), url('../Font/Hakgyoansim\ Byeolbichhaneul\ TTF\ L.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+#wrap {
+    background: #242424;
+}
+
+body,
+html {
+    font-synthesis: none;
+}
+
+@media (min-width:1537px) {
+    h1 {
+        font-size: 3.33vh;
+        /* 64px */
+        color: #ffffff;
+        /* 80px = 7.41 */
+    }
+
+    h2 {
+        font-size: 2.78vh;
+        /* 40px */
+        color: #ffffff;
+    }
+
+    h3 {
+        font-size: 2.22vh;
+        /* 36px */
+        color: #ffffff;
+    }
+
+    h4 {
+        font-size: 1.85vh;
+        /* 30px */
+        color: #ffffff;
+    }
+
+    h5 {
+        font-size: 1.67vh;
+        /* 24px */
+        color: #ffffff;
+    }
+
+    p {
+        font-size: 1vh;
+        /* 18px*/
+        color: #ffffff;
+    }
+
+    a {
+        font-size: 1.30vh;
+        /* 14px */
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .D_skip {
+        display: none !important;
+    }
+
+    #wrap>section {
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .sphere {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        pointer-events: none;
+        /* 클릭 막기 */
+    }
+
+    .sphere1 {
+        top: 20%;
+        left: -20%;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(174, 150, 192, 0.7) 0%, rgba(174, 150, 192, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 10;
+    }
+
+    .sphere2 {
+        top: 34%;
+        left: 39%;
+        width: 700px;
+        height: 700px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(106, 220, 251, 0.7) 0%, rgba(106, 220, 251, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 1;
+    }
+
+    .sphere3 {
+        top: -34%;
+        left: 70%;
+        width: 500px;
+        height: 500px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(254, 106, 106, 0.7) 0%, rgba(106, 220, 251, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 1;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 3vh;
+        position: fixed;
+        top: 40%;
+        right: 2%;
+        z-index: 100000;
+    }
+
+    .nav a {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .nav a img {
+        width: 2vh;
+    }
+
+    .nav a.active img {
+        content: url(../img/icon/btn2.png);
+    }
+
+    .nav a span {
+        font-family: 'HG';
+        color: #ffffff;
+        padding-right: 1vh;
+        opacity: 0;
+    }
+
+    .nav a:hover span {
+        opacity: 1;
+        letter-spacing: 3px;
+        /* 글자 사이 간격 */
+    }
+
+    /* work style */
+    .work_group {
+        width: 92%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* work title */
+    .work_title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 5vh 0 1vh 0;
+        gap: 8vh;
+    }
+
+    .work_title>h1 {
+        font-family: 'HG';
+        font-size: 4.5vh;
+        filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+        letter-spacing: 5px;
+        /* 글자 사이 간격 */
+    }
+
+    /* work_con */
+    .work_con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10vh;
+    }
+
+    .work_con_T {
+        background: url(../img/icon/moon.png) no-repeat 0 0;
+        background-size: contain;
+        height: 8vh;
+        margin-left: 3vh;
+    }
+
+    .work_con_T>h1 {
+        font-family: 'HG';
+        letter-spacing: 5px;
+        padding: 3vh 0 1vh 4vh;
+    }
+
+    .work_con_T>h1>span {
+        font-family: 'PC';
+        font-size: 2vh;
+        letter-spacing: 5px;
+        padding-left: 1vh;
+    }
+
+    .work_con_B {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5vh;
+    }
+
+    .work_con_B>.work2Img {
+        width: 35%;
+    }
+
+    .work2_con_left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+        z-index: 500;
+    }
+
+    .work2_con_right {
+        padding-left: 20vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .work2_text_box {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: start;
+        gap: 3vh 0;
+    }
+
+    .work2_text_box>h3:nth-child(odd) {
+        font-family: 'Pretendard_SB';
+        letter-spacing: 5px;
+    }
+
+    .work2_text_box>h3:nth-child(even) {
+        font-family: 'Pretendard_L';
+        letter-spacing: 5px;
+    }
+
+    .work_text_group>h3 {
+        font-family: 'Pretendard_L' !important;
+        letter-spacing: 5px;
+    }
+
+    /* work btn style */
+    .work_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: flex-start;
+        gap: 5vh;
+        padding-left: 20vh;
+    }
+
+    .work_btn>h4 {
+        display: inline-block;
+        padding: 2vh 4vh;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        text-align: center;
+        font-family: 'PC';
+    }
+
+    .work_btn>h4>a {
+        font-size: 1.85vh;
+    }
+
+    .work_btn>h4:hover {
+        background: #A648ED;
+    }
+
+    /* work_sub_Detail style */
+    #work_sub_Detail {
+        position: relative;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .Detail_img_group {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: -5%;
+        width: 50%;
+    }
+
+    /* Detail_img1 */
+
+    .Detail_img1 {
+        width: 34%;
+    }
+
+    .image-container>div {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        top: 1vh;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .detail_phone {
+        position: relative;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        top: 20vh;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .phone {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .phone1_1 {
+        object-fit: cover;
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .phone1_2 {
+        object-fit: cover;
+        position: absolute;
+        top: -20vh;
+        left: 16%;
+        width: 14%;
+
+    }
+
+    .phone1_3 {
+        object-fit: cover;
+        position: absolute;
+        bottom: 20vh;
+        left: 33%;
+        width: 14%;
+    }
+
+    /* Detail_img2 */
+    .Detail_img2 {
+        position: relative;
+        left: 17%;
+        width: 45%;
+    }
+
+    .detail_mac {
+        object-fit: cover;
+        position: relative;
+        width: 45%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        top: 20vh;
+        align-content: center;
+        justify-content: start;
+    }
+
+    .mac {
+        object-fit: cover;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .mac1_1 {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .mac1_2 {
+        object-fit: cover;
+        position: absolute;
+        width: 45%;
+        bottom: 15vh;
+        left: 47%;
+    }
+
+
+    .Detail_int {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        position: absolute;
+        top: 20vh;
+        left: 5%;
+        gap: 5vh;
+        width: 29%;
+    }
+
+    .Detail_font,
+    .Detail_color {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .Detail_font {
+        gap: 3vh;
+    }
+
+
+    .Detail_int h3 {
+        padding-bottom: 2vh;
+    }
+
+    .Detail_font>h3,
+    .Detail_color>h3,
+    .Part_up>.logo>h3,
+    .Part_up>.banner>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Detail_font>div>h3:nth-child(1) {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Detail_font>div>h3:nth-child(2) {
+        font-family: 'Jua';
+    }
+
+    .Detail_color {
+        gap: 3.3vh;
+        width: 110%;
+    }
+
+    .Detail_color>h3 {
+        width: 20%;
+    }
+
+    .Detail_color>div>h3 {
+        width: 100%;
+    }
+
+    .Detail_color_inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 120%;
+    }
+
+    .Detail_color_inner>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Detail_color_inner img {
+        width: 40%;
+        align-items: center;
+    }
+
+    .Detail_color>div>h3,
+    .Detail_color_inner>div h3,
+    #work_sub_Part span,
+    .Part_up>.logo>.logo_point>h3,
+    .Part_up>.banner>.banner_down>.banner_L h3,
+    .Part_down>.deco>div h3 {
+        font-family: 'Pretendard_L';
+    }
+
+
+
+    /* skill style */
+    #work_sub_Gaide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 10vh;
+        overflow: hidden;
+    }
+
+    .gaide_title {
+        padding-left: 15vh;
+    }
+
+    .Gaide_slider {
+        width: 100%;
+        height: 65vh;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Gaide_box {
+        position: relative;
+    }
+
+    .Gaide_inner {
+        padding: 2vh 1vw;
+    }
+
+    .Gaide_front {
+        width: 97%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        border-radius: 30px;
+        background: linear-gradient(to right, transparent 8%, rgba(0, 0, 0, 0.1)20%, rgba(22, 22, 22, 0.1) 31%, transparent 100%);
+        backdrop-filter: blur(100px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 30px;
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.7),
+            inset 0 0px 30px rgba(255, 255, 255, 0.5);
+        cursor: grab;
+        box-sizing: border-box;
+        margin: 0 3vh;
+        padding: 2%;
+    }
+
+    .gaide_sub_title {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* logo style */
+    .gaide_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 15vh;
+        padding-top: 3vh;
+    }
+
+    .logo_L {
+        background: url(../img/work2/gaide_frame.png) no-repeat center;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 8% 4%;
+        width: 17%;
+    }
+
+    .logo_L>img {
+        padding-bottom: 10%;
+    }
+
+    .logo_L>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .logo_size {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .logo_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .logo_R>.logo_rule {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: end;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .logo_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 2vh;
+        position: relative;
+    }
+
+    .logo_ratio>img {
+        width: 30%;
+    }
+
+    .logo_rule>div>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .logo_rule>div::before {
+        content: "";
+        position: absolute;
+        width: 115%;
+        height: 2px;
+        background-color: red;
+        top: 0%;
+        left: 0%;
+        transform: rotate(28deg);
+        transform-origin: 0 0;
+        /* 회전 기준점을 왼쪽 상단으로 설정 */
+    }
+
+    .logo_rule>div:first-child:before {
+        top: 11%;
+    }
+
+    /* slogun style */
+    .gaide_slogun {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 15vh;
+        padding-top: 4vh;
+    }
+
+    .slogun_L {
+        background: url(../img/work2/gaide_frame.png) no-repeat center;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 12% 4%;
+        width: 17%;
+    }
+
+    .slogun_L>img {
+        padding-bottom: 15%;
+    }
+
+    .slogun_L>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .slogun_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .slogun_R>.slogun_rule {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: end;
+        justify-content: center;
+        gap: 4vh 5vh;
+    }
+
+    .slogun_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 1vh;
+        position: relative;
+    }
+
+    .slogun_rule>div>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .slogun_rule>div::before {
+        content: "";
+        position: absolute;
+        width: 108%;
+        height: 2px;
+        background-color: red;
+        top: 0%;
+        left: 0%;
+        transform: rotate(20deg);
+        transform-origin: 0 0;
+        /* 회전 기준점을 왼쪽 상단으로 설정 */
+    }
+
+    .slogun_rule>div:first-child:before {
+        top: 11%;
+    }
+
+    /* icon style */
+    .gaide_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        gap: 15vh;
+        padding: 3% 0 0 3%;
+    }
+
+    .icon_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .icon_inner>.icon_rule {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .icon_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .icon_img {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        gap: 2vh;
+    }
+
+    .icon_img>img {
+        width: 38px;
+    }
+
+    .icon_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .icon_point>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon_point>div>h3 {
+        font-family: 'Pretendard_L';
+
+    }
+
+    /* color style */
+    .gaide_color {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        width: 100%;
+        gap: 10vh;
+        padding-top: 2vh;
+    }
+
+    .color_L {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 21%;
+        gap: 3vh;
+    }
+
+    .main_color,
+    .sub_color {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 1vh;
+    }
+
+    .main_color>div,
+    .sub_color>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+        width: 100%;
+    }
+
+    .color_L h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .color_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 50%;
+        gap: 3vh;
+    }
+
+    .color_R>.color_rule,
+    .color_R>.value_rule {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .color_R>.color_rule>h3,
+    .color_R>.value_rule>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .color_rule>.color_img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .value_rule {
+        width: 100%;
+    }
+
+    .value_img>img {
+        width: 100%;
+    }
+
+    .color_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .color_point>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .color_point h3 {
+        font-family: 'Pretendard_L';
+    }
+
+    /* font style */
+
+    .gaide_font {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10vh;
+        width: 100%;
+        padding-top: 7vh;
+    }
+
+    .font_L {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .font_L>img {
+        width: 55%;
+    }
+
+    .font_L h3 {
+        font-family: 'Pretendard_SB';
+        letter-spacing: 3px;
+    }
+
+    .font_R {
+        display: grid;
+        grid-template-columns: 0fr 1fr 0fr;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh 2vh;
+    }
+
+    .font_R>h3 {
+        font-size: 3vh;
+    }
+
+    .header_font,
+    .Botton_font {
+        font-family: 'Pretendard_B';
+    }
+
+    .Nav_font {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Body1_font {
+        font-family: 'Pretendard_M';
+    }
+
+    .Body2_font {
+        font-family: 'Pretendard_SB';
+    }
+
+
+
+
+    /* margin style */
+    .gaide_margin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .gaide_margin>img {
+        width: 17%;
+        position: absolute;
+        top: 0;
+        left: 35%;
+    }
+
+    .margin {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .margin>h2 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .margin>h3 {
+        font-family: 'Pretendard_L';
+    }
+
+    .all_margin {
+        top: 3vh;
+        left: 10%;
+    }
+
+    .all_margin::after {
+        content: '';
+        width: 70%;
+        height: 2px;
+        background: #FF6565;
+        position: relative;
+        top: -8vh;
+        left: 85%;
+    }
+
+    .con_margin {
+        top: 32vh;
+        left: 7%;
+    }
+
+    .con_margin::after {
+        content: '';
+        width: 63%;
+        height: 2px;
+        background: #5D65FF;
+        position: relative;
+        top: -8vh;
+        left: 103%;
+    }
+
+    .title_margin {
+        top: 1vh;
+        right: 10%;
+    }
+
+    .title_margin::after {
+        content: '';
+        width: 60%;
+        height: 2px;
+        background: #5DFF4E;
+        position: relative;
+        top: -8vh;
+        left: -64%;
+    }
+
+    .category_margin {
+        top: 24vh;
+        right: 1%;
+    }
+
+    .category_margin::after {
+        content: '';
+        width: 42%;
+        height: 2px;
+        background: #FFF956;
+        position: relative;
+        top: -13vh;
+        left: -44%;
+    }
+
+    /* layout style */
+    .gaide_layout {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        gap: 10vh;
+        padding-top: 2vh;
+    }
+
+    .layout_L {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        gap: 10vh;
+
+    }
+
+    .layout_LL,
+    .layout_LR {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .layout_int {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .layout_text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .layout_text>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .layout_text>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .layout_R>img {
+        width: 106%;
+    }
+
+    /* Preview style */
+    #work_sub_Preview {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+    }
+
+        #work_sub_Preview>div {
+        display: flex;
+        flex-direction: row;
+        gap: 5vh;
+    }
+
+
+    /* Preview_L style */
+
+    .Preview_L,
+    .Preview_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .Preview_L {
+        width: 55%;
+        padding-left: 5vh;
+    }
+
+    .point {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .Preview_point h2 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Preview_point h3 {
+        font-family: 'Pretendard_L';
+    }
+
+    .Preview_point a {
+        font-size: 2.5vh;
+        font-family: 'Pretendard_SB';
+        color: #FFA7A7;
+        padding-left: 2vh;
+    }
+
+    /* Preview_R style */
+    .Preview_R {
+        width: 75%;
+    }
+
+    .Preview_R>img {
+        width: 155%;
+    }
+
+
+}
+
+@media (min-width:768px) and (max-width:1536px) {
+
+
+    h1 {
+        font-size: 3.33vh;
+        /* 64px */
+        color: #ffffff;
+        /* 80px = 7.41 */
+    }
+
+    h2 {
+        font-size: 2.78vh;
+        /* 40px */
+        color: #ffffff;
+    }
+
+    h3 {
+        font-size: 2.22vh;
+        /* 36px */
+        color: #ffffff;
+    }
+
+    h4 {
+        font-size: 1.85vh;
+        /* 30px */
+        color: #ffffff;
+    }
+
+    h5 {
+        font-size: 1.67vh;
+        /* 24px */
+        color: #ffffff;
+    }
+
+    p {
+        font-size: 1vh;
+        /* 18px*/
+        color: #ffffff;
+    }
+
+    a {
+        font-size: 1.30vh;
+        /* 14px */
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .D_skip {
+        display: none !important;
+    }
+
+    #wrap>section {
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .sphere {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        pointer-events: none;
+        /* 클릭 막기 */
+    }
+
+    .sphere1 {
+        top: 20%;
+        left: -20%;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(174, 150, 192, 0.7) 0%, rgba(174, 150, 192, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 10;
+    }
+
+    .sphere2 {
+        top: 34%;
+        left: 39%;
+        width: 700px;
+        height: 700px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(106, 220, 251, 0.7) 0%, rgba(106, 220, 251, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 1;
+    }
+
+    .sphere3 {
+        top: -34%;
+        left: 70%;
+        width: 500px;
+        height: 500px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(254, 106, 106, 0.7) 0%, rgba(106, 220, 251, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 1;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 3vh;
+        position: fixed;
+        top: 40%;
+        right: 2%;
+        z-index: 100000;
+    }
+
+    .nav a {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .nav a img {
+        width: 2vh;
+    }
+
+    .nav a.active img {
+        content: url(../img/icon/btn2.png);
+    }
+
+    .nav a span {
+        font-family: 'HG';
+        color: #ffffff;
+        padding-right: 1vh;
+        opacity: 0;
+    }
+
+    .nav a:hover span {
+        opacity: 1;
+        letter-spacing: 3px;
+        /* 글자 사이 간격 */
+    }
+
+    /* work style */
+    .work_group {
+        width: 92%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* work title */
+    .work_title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 5vh 0 1vh 0;
+        gap: 8vh;
+    }
+
+    .work_title>h1 {
+        font-family: 'HG';
+        font-size: 4.5vh;
+        filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+        letter-spacing: 5px;
+        /* 글자 사이 간격 */
+    }
+
+    /* work_con */
+    .work_con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10vh;
+    }
+
+    .work_con_T {
+        background: url(../img/icon/moon.png) no-repeat 0 0;
+        background-size: contain;
+        height: 8vh;
+        margin-left: 3vh;
+    }
+
+    .work_con_T>h1 {
+        font-family: 'HG';
+        letter-spacing: 5px;
+        padding: 3vh 0 1vh 4vh;
+    }
+
+    .work_con_T>h1>span {
+        font-family: 'PC';
+        font-size: 2vh;
+        letter-spacing: 5px;
+        padding-left: 1vh;
+    }
+
+    .work_con_B {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5vh;
+    }
+
+    .work_con_B>.work2Img {
+        width: 35%;
+    }
+
+    .work2_con_left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+        z-index: 500;
+    }
+
+    .work2_con_right {
+        padding-left: 20vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+
+    .work2_text_box {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        align-items: start;
+        gap: 3vh 0;
+    }
+
+    .work2_text_box>h3:nth-child(odd) {
+        font-family: 'Pretendard_SB';
+        letter-spacing: 5px;
+    }
+
+    .work2_text_box>h3:nth-child(even) {
+        font-family: 'Pretendard_L';
+        letter-spacing: 5px;
+    }
+
+    .work_text_group>h3 {
+        font-family: 'Pretendard_L' !important;
+        letter-spacing: 5px;
+    }
+
+    /* work btn style */
+    .work_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-self: flex-start;
+        gap: 5vh;
+        padding-left: 20vh;
+    }
+
+    .work_btn>h4 {
+        display: inline-block;
+        padding: 2vh 4vh;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        text-align: center;
+        font-family: 'PC';
+    }
+
+    .work_btn>h4>a {
+        font-size: 1.85vh;
+    }
+
+    .work_btn>h4:hover {
+        background: #A648ED;
+    }
+
+    /* work_sub_Detail style */
+    #work_sub_Detail {
+        position: relative;
+        /* overflow: hidden; */
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .Detail_img_group {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        left: -5%;
+        width: 50%;
+    }
+
+    /* Detail_img1 */
+
+    .Detail_img1 {
+        /* display: flex;
+        flex-direction: row;
+        position: relative;
+        left: 7%; */
+        width: 34%;
+    }
+
+    .image-container>div {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        top: 1vh;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .detail_phone {
+        position: relative;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        top: 20vh;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .phone {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+
+    }
+
+    .phone1_1 {
+        object-fit: cover;
+        position: absolute;
+        left: 0%;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .phone1_2 {
+        object-fit: cover;
+        position: absolute;
+        top: -20vh;
+        left: 16%;
+        width: 14%;
+
+    }
+
+    .phone1_3 {
+        object-fit: cover;
+        position: absolute;
+        bottom: 20vh;
+        left: 33%;
+        width: 14%;
+    }
+
+    /* Detail_img2 */
+    .Detail_img2 {
+        /* display: flex;
+        flex-direction: row; */
+        position: relative;
+        left: 17%;
+        width: 45%;
+    }
+
+    .detail_mac {
+        object-fit: cover;
+        position: relative;
+        width: 45%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        top: 20vh;
+        align-content: center;
+        justify-content: start;
+    }
+
+    .mac {
+        object-fit: cover;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .mac1_1 {
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        z-index: 0;
+    }
+
+    .mac1_2 {
+        object-fit: cover;
+        position: absolute;
+        width: 45%;
+        bottom: 15vh;
+        left: 47%;
+    }
+
+
+    .Detail_int {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        position: absolute;
+        top: 20vh;
+        left: 5%;
+        gap: 5vh;
+        width: 29%;
+    }
+
+    .Detail_font,
+    .Detail_color {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .Detail_font {
+        gap: 3vh;
+    }
+
+
+    .Detail_int h3 {
+        padding-bottom: 2vh;
+    }
+
+    .Detail_font>h3,
+    .Detail_color>h3,
+    .Part_up>.logo>h3,
+    .Part_up>.banner>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Detail_font>div>h3:nth-child(1) {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Detail_font>div>h3:nth-child(2) {
+        font-family: 'Jua';
+    }
+
+    .Detail_color {
+        gap: 7.3vh;
+        width: 100%;
+    }
+
+    .Detail_color>h3 {
+        width: 20%;
+    }
+
+    .Detail_color>div>h3 {
+        width: 100%;
+    }
+
+    .Detail_color_inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 120%;
+    }
+
+    .Detail_color_inner>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Detail_color_inner img {
+        width: 40%;
+        align-items: center;
+    }
+
+    .Detail_color>div>h3,
+    .Detail_color_inner>div h3,
+    #work_sub_Part span,
+    .Part_up>.logo>.logo_point>h3,
+    .Part_up>.banner>.banner_down>.banner_L h3,
+    .Part_down>.deco>div h3 {
+        font-family: 'Pretendard_L';
+    }
+
+
+
+    /* skill style */
+    #work_sub_Gaide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 10vh;
+        overflow: hidden;
+    }
+
+    .gaide_title {
+        padding-left: 15vh;
+    }
+
+    .Gaide_slider {
+        width: 100%;
+        height: 65vh;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Gaide_box {
+        position: relative;
+    }
+
+    .Gaide_inner {
+        padding: 2vh 1vw;
+    }
+
+    .Gaide_front {
+        width: 97%;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        border-radius: 30px;
+        background: linear-gradient(to right, transparent 8%, rgba(0, 0, 0, 0.1)20%, rgba(22, 22, 22, 0.1) 31%, transparent 100%);
+        backdrop-filter: blur(100px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 30px;
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.7),
+            inset 0 0px 30px rgba(255, 255, 255, 0.5);
+        cursor: grab;
+        box-sizing: border-box;
+        margin: 0 3vh;
+        padding: 2%;
+    }
+
+    .gaide_sub_title {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* logo style */
+    .gaide_logo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 15vh;
+    }
+
+    .logo_L {
+        background: url(../img/work2/gaide_frame.png) no-repeat center;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 6% 3%;
+        width: 17%;
+    }
+
+    .logo_L>img {
+        padding-bottom: 10%;
+    }
+
+    .logo_L>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .logo_size {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .logo_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .logo_R>.logo_rule {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: end;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .logo_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 2vh;
+        position: relative;
+    }
+
+    .logo_ratio>img {
+        width: 40%;
+    }
+
+    .logo_rule>div>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .logo_rule>div::before {
+        content: "";
+        position: absolute;
+        width: 115%;
+        height: 2px;
+        background-color: red;
+        top: 0%;
+        left: 0%;
+        transform: rotate(35deg);
+        transform-origin: 0 0;
+        /* 회전 기준점을 왼쪽 상단으로 설정 */
+    }
+
+    .logo_rule>div:first-child:before {
+        top: 11%;
+    }
+
+    /* slogun style */
+    .gaide_slogun {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 15vh;
+    }
+
+    .slogun_L {
+        background: url(../img/work2/gaide_frame.png) no-repeat center;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 12% 3%;
+        width: 17%;
+    }
+
+    .slogun_L>img {
+        padding-bottom: 15%;
+    }
+
+    .slogun_L>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .slogun_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .slogun_R>.slogun_rule {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: end;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .slogun_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 1vh;
+        position: relative;
+    }
+
+    .slogun_rule>div>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .slogun_rule>div::before {
+        content: "";
+        position: absolute;
+        width: 108%;
+        height: 2px;
+        background-color: red;
+        top: 0%;
+        left: 0%;
+        transform: rotate(20deg);
+        transform-origin: 0 0;
+        /* 회전 기준점을 왼쪽 상단으로 설정 */
+    }
+
+    .slogun_rule>div:first-child:before {
+        top: 11%;
+    }
+
+    /* icon style */
+    .gaide_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        gap: 15vh;
+        padding: 1% 0 0 3%;
+    }
+
+    .icon_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .icon_inner>.icon_rule {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .icon_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .icon_img {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        gap: 2vh;
+    }
+
+    .icon_img>img {
+        width: 38px;
+    }
+
+    .icon_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .icon_point>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon_point>div>h3 {
+        font-family: 'Pretendard_L';
+
+    }
+
+    /* color style */
+    .gaide_color {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 15vh;
+    }
+
+    .color_L {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .main_color,
+    .sub_color {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .main_color>div,
+    .sub_color>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .color_L h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .color_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .color_R>.color_rule,
+    .color_R>.value_rule {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .color_R>.color_rule>h3,
+    .color_R>.value_rule>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .color_rule>.color_img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .value_rule {
+        width: 80%;
+    }
+
+    .color_img>img {
+        width: 20%;
+    }
+
+    .value_img>img {
+        width: 100%;
+    }
+
+    .color_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .color_point>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .color_point h3 {
+        font-family: 'Pretendard_L';
+    }
+
+    /* font style */
+
+    .gaide_font {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 15vh;
+        width: 100%;
+        padding-top: 5vh;
+    }
+
+    .font_L {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .font_L h3 {
+        font-family: 'Pretendard_SB';
+        letter-spacing: 3px;
+    }
+
+    .font_L>.work_text_group>h3 {
+        letter-spacing: 0px;
+    }
+
+    .font_R {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 0.5fr;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .font_R>h3 {
+        font-size: 3vh;
+    }
+
+    .header_font,
+    .Botton_font {
+        font-family: 'Pretendard_B';
+    }
+
+    .Nav_font {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Body1_font {
+        font-family: 'Pretendard_M';
+    }
+
+    .Body2_font {
+        font-family: 'Pretendard_SB';
+    }
+
+    /* margin style */
+    .gaide_margin {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .gaide_margin>img {
+        width: 14%;
+    }
+
+    .margin {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .margin>h2 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .margin>h3 {
+        font-family: 'Pretendard_L';
+    }
+
+    .all_margin {
+        top: 5vh;
+        left: 22%;
+    }
+
+    .all_margin::after {
+        content: '';
+        width: 70%;
+        height: 2px;
+        background: #FF6565;
+        position: relative;
+        top: -8vh;
+        left: 85%;
+    }
+
+    .con_margin {
+        top: 31vh;
+        left: 19%;
+    }
+
+    .con_margin::after {
+        content: '';
+        width: 63%;
+        height: 2px;
+        background: #5D65FF;
+        position: relative;
+        top: -8vh;
+        left: 103%;
+    }
+
+    .title_margin {
+        top: 1vh;
+        right: 10%;
+    }
+
+    .title_margin::after {
+        content: '';
+        width: 60%;
+        height: 2px;
+        background: #5DFF4E;
+        position: relative;
+        top: -8vh;
+        left: -64%;
+    }
+
+    .category_margin {
+        top: 20vh;
+        right: 3%;
+    }
+
+    .category_margin::after {
+        content: '';
+        width: 42%;
+        height: 2px;
+        background: #FFF956;
+        position: relative;
+        top: -13vh;
+        left: -44%;
+    }
+
+    /* layout style */
+    .gaide_layout {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        width: 100%;
+        gap: 15vh;
+        padding-top: 2vh;
+    }
+
+    .layout_L {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: center;
+        gap: 10vh;
+
+    }
+
+    .layout_LL,
+    .layout_LR {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .layout_int {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .layout_text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .layout_text>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .layout_text>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .layout_R>img {
+        width: 75%;
+    }
+
+    /* Preview style */
+    #work_sub_Preview {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #work_sub_Preview>div {
+        display: flex;
+        flex-direction: row;
+        gap: 5vh;
+    }
+
+    /* Preview_L style */
+
+    .Preview_L,
+    .Preview_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .Preview_L {
+        width: 55%;
+        padding-left: 5vh;
+    }
+
+    .point {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .Preview_point h2 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Preview_point h3 {
+        font-family: 'Pretendard_L';
+    }
+
+    .Preview_point a {
+        font-size: 2.5vh;
+        font-family: 'Pretendard_SB';
+        color: #FFA7A7;
+        padding-left: 2vh;
+    }
+
+
+    /* Preview_R style */
+    .Preview_R {
+        width: 60%;
+    }
+
+    .Preview_R>img {
+        width: 150%;
+    }
+
+
+}
+
+@media (max-width:767px) {
+    h1 {
+        font-size: 3.33vh;
+        /* 64px */
+        color: #ffffff;
+        /* 
+        80px = 7.41 */
+    }
+
+    h2 {
+        font-size: 2.78vh;
+        /* 40px */
+        color: #ffffff;
+    }
+
+    h3 {
+        font-size: 2.22vh;
+        /* 36px */
+        color: #ffffff;
+    }
+
+    h4 {
+        font-size: 1.85vh;
+        /* 30px */
+        color: #ffffff;
+    }
+
+    h5 {
+        font-size: 1.67vh;
+        /* 24px */
+        color: #ffffff;
+    }
+
+    p {
+        font-size: 1vh;
+        /* 18px*/
+        color: #ffffff;
+    }
+
+    a {
+        font-size: 1.30vh;
+        /* 14px */
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .M_skip {
+        display: none !important;
+    }
+
+    #wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 8vh;
+    }
+
+    #wrap>section {
+        width: 100%;
+        z-index: 100;
+        margin: 0 auto;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    /* 초기 상태: 보이지 않음 */
+    .fade_in {
+        opacity: 0;
+        /* (선택 사항) 약간 아래에서 올라오는 효과를 추가할 수 있습니다. */
+        transform: translateY(50px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    }
+
+    /* 페이드인 활성화 상태: 완전히 보임 */
+    .fade_in.in-view {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .sphere {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        pointer-events: none;
+        /* 클릭 막기 */
+    }
+
+    .sphere1 {
+        top: 20%;
+        left: -20%;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(174, 150, 192, 0.7) 0%, rgba(174, 150, 192, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 10;
+    }
+
+    .sphere2 {
+        top: 34%;
+        left: 39%;
+        width: 700px;
+        height: 700px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(106, 220, 251, 0.7) 0%, rgba(106, 220, 251, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 1;
+    }
+
+    .sphere3 {
+        top: -34%;
+        left: 70%;
+        width: 500px;
+        height: 500px;
+        border-radius: 999px;
+        background: radial-gradient(circle, rgba(254, 106, 106, 0.7) 0%, rgba(106, 220, 251, 0) 70%, transparent 100%) no-repeat center;
+        z-index: 1;
+    }
+
+    /* nav style */
+    .nav_open {
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        z-index: 10000;
+        font-family: 'HG';
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 4vh;
+    }
+
+    .nav {
+        position: fixed;
+        top: -100%;
+        /* 화면 위로 숨김 */
+        left: 0;
+        width: 100%;
+        z-index: 100000;
+        transition: top 0.4s ease;
+    }
+
+    /* nav 열렸을 때 */
+    .nav.open {
+        top: 0vh;
+    }
+
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: 3vh;
+        background: #242424;
+        padding-top: 5vh;
+    }
+
+    .nav>ul>li {
+        width: 90%;
+        padding: 1vh 0;
+        margin: 0 auto;
+    }
+
+    .nav>ul>li>a {
+        border-bottom: 1px solid #ffffff;
+        display: block;
+    }
+
+    .nav>ul>li:last-child {
+        margin: 0 auto;
+    }
+
+    .nav>ul>li:last-child>a {
+        border: none;
+        text-align: center;
+    }
+
+    .nav a {
+        filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+        width: 100%;
+        padding: 1vh 0;
+    }
+
+    .nav a span {
+        font-family: 'HG';
+        display: block;
+        font-size: 3vh;
+        color: #ffffff;
+        letter-spacing: 3px;
+    }
+
+    .nav li:last-child a span {
+        font-size: 2.5vh;
+    }
+
+    .nav li:hover span {
+        color: #A648ED;
+    }
+
+    .sub_nav {
+        padding-top: 2vh !important;
+    }
+
+    .sub_nav a {
+        font-size: 2.5vh;
+        color: #cccccc;
+        font-family: 'HG';
+    }
+
+    /* work style */
+    .work_group {
+        width: 92%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* work title */
+    .work_title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        padding: 5vh 0 1vh 0;
+    }
+
+    .work_title>h1 {
+        font-family: 'HG';
+        font-size: 3.5vh;
+        filter: drop-shadow(0 0 10px rgb(255, 255, 255));
+        letter-spacing: 5px;
+        /* 글자 사이 간격 */
+    }
+
+    .work_title>img {
+        width: 200%;
+    }
+
+    /* work_con */
+    .work_con {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5vh;
+        padding-top: 1vh;
+    }
+
+    .work_con_T {
+        background: url(../img/icon/moon.png) no-repeat 0 0;
+        background-size: contain;
+        height: 4vh;
+        margin-left: 1vh;
+    }
+
+    .work_con_T>h1 {
+        font-family: 'HG';
+        font-size: 2.5vh;
+        letter-spacing: 5px;
+        padding: 1vh 0 1vh 2vh;
+    }
+
+    .work_con_T>h1>span {
+        font-family: 'PC';
+        font-size: 2vh;
+        letter-spacing: 5px;
+        padding-left: 1vh;
+    }
+
+    .work_con_B {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        gap: 5vh;
+    }
+
+    .work_con_B>.work2Img {
+        width: 100%;
+    }
+
+    .work2_text_box>.work_text_group>h3 {
+        font-family: 'Pretendard_L' !important;
+        letter-spacing: 4px;
+        /* 평소에는 3줄 정도만 보이도록 높이를 제한합니다. */
+        max-height: 0px;
+        overflow: hidden;
+        /* 넘치는 내용을 숨김 */
+        transition: max-height 0.5s ease-in-out;
+        /* 부드러운 전환 효과 추가 */
+        margin-bottom: 10px;
+    }
+
+    .work_text_group>h3.active {
+        max-height: 1000px;
+        /* 충분히 큰 값으로 설정하여 전체 내용이 보이도록 함 */
+    }
+
+    .work_text_group>h4 {
+        font-family: 'Pretendard_R';
+        letter-spacing: 4px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #A648ED;
+        /* 파란색 링크 스타일 */
+        padding: 0;
+    }
+
+    .work2_con_left {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 5vh;
+        z-index: 500;
+    }
+
+    .work2_text_box {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .work2_text_box>h3:nth-child(odd) {
+        font-family: 'Pretendard_SB';
+        letter-spacing: 5px;
+        padding: 3vh 0 1vh 0;
+    }
+
+    .work2_text_box>h3:nth-child(even) {
+        font-family: 'Pretendard_L';
+        letter-spacing: 3px;
+        padding-left: 2vh;
+    }
+
+    .work2_con_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+    }
+
+    /* work btn style */
+    .work_btn {
+        margin: 0 auto;
+    }
+
+    .work_btn>h4 {
+        display: inline-block;
+        padding: 2vh 4vh;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        text-align: center;
+        font-family: 'PC';
+    }
+
+    .work_btn>h4>a {
+        font-size: 1.85vh;
+    }
+
+    .work_btn>h4:hover {
+        background: #A648ED;
+    }
+
+    /* work_sub_Detail style */
+    #work_sub_Detail {
+        display: flex;
+        flex-direction: column;
+        gap: 5vh;
+    }
+
+    .Detail_img_group {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 92%;
+        margin: 0 auto;
+        gap: 5%;
+    }
+
+    /* Detail_img1 */
+    .Detail_img1 {
+        width: 40%;
+    }
+
+    .phone {
+        width: 100%;
+    }
+
+    /* Detail_img2 */
+    .Detail_img2,
+    .mac {
+        width: 100%;
+    }
+
+    .Detail_int {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 5vh;
+        width: 92%;
+        margin: 0 auto;
+    }
+
+    .Detail_font,
+    .Detail_color {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .Detail_font>h3,
+    .Detail_color>h3,
+    .Part_up>.logo>h3,
+    .Part_up>.banner>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Detail_font>div>h3:nth-child(1) {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Detail_font>div>h3:nth-child(2) {
+        font-family: 'Jua';
+    }
+
+    .Detail_color>h3 {
+        width: 20%;
+    }
+
+    .Detail_color>div>h3 {
+        width: 100%;
+    }
+
+    .Detail_color_inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        padding-top: 2vh;
+    }
+
+    .Detail_color_inner>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Detail_color_inner img {
+        width: 40%;
+        align-items: center;
+    }
+
+    .Detail_color>div>h3,
+    .Detail_color_inner>div h3 {
+        font-family: 'Pretendard_L';
+    }
+
+
+
+    /* skill style */
+    #work_sub_Gaide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 10vh;
+        overflow: hidden;
+    }
+
+    .gaide_title {
+        padding-left: 15vh;
+    }
+
+    .Gaide_slider {
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Gaide_box {
+        position: relative;
+    }
+
+    .Gaide_inner {
+        padding: 2vh 1vw;
+    }
+
+    .Gaide_front {
+        width: 100%;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        border-radius: 30px;
+        background: linear-gradient(to right, transparent 8%, rgba(0, 0, 0, 0.1)20%, rgba(22, 22, 22, 0.1) 31%, transparent 100%);
+        backdrop-filter: blur(100px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 30px;
+        box-shadow: 0 0px 20px rgba(0, 0, 0, 0.7),
+            inset 0 0px 30px rgba(255, 255, 255, 0.5);
+        cursor: grab;
+        box-sizing: border-box;
+        padding: 2%;
+    }
+
+    .gaide_sub_title {
+        display: flex;
+        flex-direction: row;
+        padding: 2vh 2vh;
+    }
+
+
+    .work_text_group {
+        max-height: 0px;
+        overflow: hidden;
+        /* 넘치는 내용을 숨김 */
+        transition: max-height 0.5s ease-in-out;
+        /* 부드러운 전환 효과 추가 */
+        margin-bottom: 10px;
+    }
+
+    .work_text_group.active {
+        max-height: 10000px;
+        /* 충분히 큰 값으로 설정하여 전체 내용이 보이도록 함 */
+    }
+
+    .Gaide_inner .text_btn {
+        font-family: 'Pretendard_SB';
+        letter-spacing: 4px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #A648ED;
+        /* 파란색 링크 스타일 */
+        padding-bottom: 2vh;
+        align-self: start;
+    }
+
+    /* logo style */
+    .gaide_logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10vh;
+    }
+
+    .logo_L {
+        background: url(../img/work2/gaide_frame.png) no-repeat center;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 19% 3%;
+        width: 80%;
+    }
+
+    .logo_L>img {
+        padding-bottom: 10%;
+    }
+
+    .logo_L>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .logo_size {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+
+    .logo_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .logo_R>h3 {
+        padding-bottom: 2vh;
+    }
+
+    .logo_R>.logo_rule {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: end;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .logo_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 2vh;
+        position: relative;
+    }
+
+    .logo_ratio>img {
+        width: 40%;
+    }
+
+    .logo_rule>div>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .logo_rule>div::before {
+        content: "";
+        position: absolute;
+        width: 115%;
+        height: 2px;
+        background-color: red;
+        top: 0%;
+        left: 0%;
+        transform: rotate(35deg);
+        transform-origin: 0 0;
+        /* 회전 기준점을 왼쪽 상단으로 설정 */
+    }
+
+    .logo_rule>div:first-child:before {
+        top: 11%;
+    }
+
+    /* slogun style */
+    .gaide_slogun {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10vh;
+    }
+
+    .slogun_L {
+        background: url(../img/work2/gaide_frame.png) no-repeat center;
+        background-size: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 39% 3%;
+        width: 80%;
+    }
+
+    .slogun_L>img {
+        padding-bottom: 15%;
+    }
+
+    .slogun_L>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .slogun_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .slogun_R>h3 {
+        padding-bottom: 2vh;
+    }
+
+    .slogun_R>.slogun_rule {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: end;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .slogun_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        gap: 1vh;
+        position: relative;
+    }
+
+    .slogun_rule>div>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .slogun_rule>div::before {
+        content: "";
+        position: absolute;
+        width: 108%;
+        height: 2px;
+        background-color: red;
+        top: 0%;
+        left: 0%;
+        transform: rotate(20deg);
+        transform-origin: 0 0;
+        /* 회전 기준점을 왼쪽 상단으로 설정 */
+    }
+
+    .slogun_rule>div:first-child:before {
+        top: 11%;
+    }
+
+    /* icon style */
+    .gaide_icon {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+        gap: 15vh;
+    }
+
+    .icon_inner {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .icon_inner>.icon_rule {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .icon_rule>div {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .icon_point {
+        gap: 1vh;
+    }
+
+    .icon_img {
+        padding-top: 2vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: start;
+        gap: 2vh;
+    }
+
+    .icon_img>img {
+        width: 38px;
+    }
+
+    .icon_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .icon_point>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icon_point>div>h3 {
+        font-family: 'Pretendard_L';
+
+    }
+
+    /* color style */
+    .gaide_color {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .color_L {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+        padding-bottom: 10vh;
+    }
+
+    .main_color,
+    .sub_color {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .main_color>div,
+    .sub_color>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .color_L h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .color_R {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .color_R>.color_rule,
+    .color_R>.value_rule {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .color_R>.color_rule>h3,
+    .color_R>.value_rule>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .color_rule>.color_img {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .value_rule {
+        width: 100%;
+    }
+
+    .color_img>img {
+        width: 20%;
+    }
+
+    .value_img>img {
+        width: 100%;
+    }
+
+    .color_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .color_point>div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .color_point h3 {
+        font-family: 'Pretendard_L';
+    }
+
+    /* font style */
+
+    .gaide_font {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3vh;
+        width: 95%;
+        margin: 0 auto;
+        padding-top: 3vh;
+    }
+
+    .font_L {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+    }
+
+    .font_L>h3 {
+        font-family: 'Pretendard_SB';
+        letter-spacing: 3px;
+        padding-bottom: 2vh;
+    }
+
+    .font_L>.work_text_group>h3 {
+        font-family: 'Pretendard_R';
+        padding-bottom: 1vh;
+    }
+
+    .font_L>img {
+        width: 50%;
+    }
+
+    .font_R {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        align-items: start;
+        justify-content: center;
+        column-gap: 1vh;
+    }
+
+    .grid_title {
+        padding-top: 2vh;
+        grid-column: 1 / 3;
+    }
+
+
+
+    .header_font,
+    .Botton_font {
+        font-family: 'Pretendard_B';
+    }
+
+    .Nav_font {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Body1_font {
+        font-family: 'Pretendard_M';
+    }
+
+    .Body2_font {
+        font-family: 'Pretendard_R';
+    }
+
+    /* margin style */
+    .gaide_margin {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .gaide_margin>img {
+        width: 60%;
+        padding-bottom: 3vh;
+    }
+
+    .margin {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 1vh;
+    }
+
+    .margin>h2 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .margin>h3 {
+        font-family: 'Pretendard_L';
+        padding-bottom: 2vh;
+    }
+
+    .all_margin::after {
+        content: '';
+        width: 10%;
+        height: 2px;
+        background: #FF6565;
+        position: relative;
+        top: -8vh;
+        left: 44%;
+    }
+
+    .con_margin::after {
+        content: '';
+        width: 10%;
+        height: 2px;
+        background: #5D65FF;
+        position: relative;
+        top: -8vh;
+        left: 57%;
+    }
+
+    .title_margin::after {
+        content: '';
+        width: 10%;
+        height: 2px;
+        background: #5DFF4E;
+        position: relative;
+        top: -8vh;
+        left: 78%;
+    }
+
+    .category_margin::after {
+        content: '';
+        width: 10%;
+        height: 2px;
+        background: #FFF956;
+        position: relative;
+        top: -19vh;
+        left: 64%;
+    }
+
+    /* layout style */
+    .gaide_layout {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .layout_L {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+
+    }
+
+    .layout_LL,
+    .layout_LR {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .layout_int {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .layout_text {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: start;
+        gap: 1vh;
+    }
+
+    .layout_text>h3 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .layout_text>h4 {
+        font-family: 'Pretendard_L';
+    }
+
+    .layout_R {
+        margin: 0 auto;
+        padding-bottom: 2vh;
+    }
+
+    .layout_R>img {
+        width: 90%;
+    }
+
+    /* Preview style */
+    #work_sub_Preview {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding-bottom: 10vh;
+    }
+
+    #work_sub_Preview>div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start;
+        justify-content: center;
+    }
+
+
+    /* Preview_L style */
+
+    .Preview_L,
+    .Preview_point {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        gap: 3vh;
+    }
+
+    .Preview_L {
+        padding-top: 5vh;
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .point {
+        display: flex;
+        flex-direction: row;
+        align-items: start;
+        justify-content: start;
+    }
+
+    .Preview_point h2 {
+        font-family: 'Pretendard_SB';
+    }
+
+    .Preview_point h3 {
+        font-family: 'Pretendard_L';
+    }
+
+    .Preview_point a {
+        font-size: 2.5vh;
+        font-family: 'Pretendard_SB';
+        color: #FFA7A7;
+        padding-left: 2vh;
+    }
+
+
+    /* Preview_R style */
+    .Preview_R {
+        width: 100%;
+        height: 40vh;
+        overflow: hidden;
+        position: relative;
+        padding-top: 5vh;
+    }
+
+    .Preview_R>img {
+        width: 150%;
+        position: absolute;
+        left: -18%;
+    }
+
+}
