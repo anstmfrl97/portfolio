@@ -3382,42 +3382,42 @@ html {
 
     .all_margin::after {
         content: '';
-        width: 10%;
+        width: 47%;
         height: 2px;
         background: #FF6565;
         position: relative;
-        top: -8vh;
-        left: 44%;
+        top: -6.5vh;
+        left: 0%;
     }
 
     .con_margin::after {
         content: '';
-        width: 10%;
+        width: 62%;
         height: 2px;
         background: #5D65FF;
         position: relative;
-        top: -8vh;
-        left: 57%;
+        top: -6.5vh;
+        left: 0%;
     }
 
     .title_margin::after {
         content: '';
-        width: 10%;
+        width: 85%;
         height: 2px;
         background: #5DFF4E;
         position: relative;
-        top: -8vh;
-        left: 78%;
+        top: -6.5vh;
+        left: 0%;
     }
 
     .category_margin::after {
         content: '';
-        width: 10%;
+        width: 68%;
         height: 2px;
         background: #FFF956;
         position: relative;
-        top: -19vh;
-        left: 64%;
+        top: -17vh;
+        left: 0%;
     }
 
     /* layout style */
