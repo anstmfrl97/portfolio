@@ -346,15 +346,14 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 2vh 4vh;
+        padding: 1vh 2vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
-        text-align: center;
-        font-family: 'PC';
     }
 
-    .work_btn>h4>a {
-        font-size: 1.85vh;
+    .work_btn>h4>a>img {
+        width: 25%;
+        margin: 0 auto;
     }
 
     .work_btn>h4:hover {
@@ -1177,7 +1176,7 @@ html {
         justify-content: center;
     }
 
-        #work_sub_Preview>div {
+    #work_sub_Preview>div {
         display: flex;
         flex-direction: row;
         gap: 5vh;
@@ -1215,12 +1214,22 @@ html {
         font-family: 'Pretendard_L';
     }
 
-    .Preview_point a {
-        font-size: 2.5vh;
-        font-family: 'Pretendard_SB';
-        color: #FFA7A7;
-        padding-left: 2vh;
+    .link_btn {
+        align-self: center;        
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
     }
+
+    .link_btn>a {
+        margin: 0 auto;
+        padding: 0.5vh 3vh;
+        width: 25%;
+    }
+
+    .link_btn>a>img {
+        width: 100%;
+    }
+
 
     /* Preview_R style */
     .Preview_R {
@@ -1464,17 +1473,17 @@ html {
 
     .work2_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     .work2_text_box>h3:nth-child(even) {
         font-family: 'Pretendard_L';
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     /* work btn style */
@@ -1486,18 +1495,17 @@ html {
         gap: 5vh;
         padding-left: 20vh;
     }
-
     .work_btn>h4 {
         display: inline-block;
-        padding: 2vh 4vh;
+        padding: 1vh 2vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
-        font-family: 'PC';
     }
 
-    .work_btn>h4>a {
-        font-size: 1.85vh;
+    .work_btn>h4>a>img {
+        width: 25%;
+        margin: 0 auto;
     }
 
     .work_btn>h4:hover {
@@ -2354,11 +2362,20 @@ html {
         font-family: 'Pretendard_L';
     }
 
-    .Preview_point a {
-        font-size: 2.5vh;
-        font-family: 'Pretendard_SB';
-        color: #FFA7A7;
-        padding-left: 2vh;
+    .link_btn {
+        align-self: center;        
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+    }
+
+    .link_btn>a {
+        margin: 0 auto;
+        padding: 0.5vh 3vh;
+        width: 25%;
+    }
+
+    .link_btn>a>img {
+        width: 100%;
     }
 
 
@@ -2501,6 +2518,7 @@ html {
         font-family: 'HG';
         background: rgba(0, 0, 0, 0.5);
         font-size: 4vh;
+        padding: 1vh 0;
     }
 
     .nav {
@@ -2535,7 +2553,7 @@ html {
     }
 
     .nav>ul>li>a {
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         display: block;
     }
 
@@ -2695,14 +2713,14 @@ html {
 
     .work2_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';
-        letter-spacing: 5px;
+        word-spacing: 3px;
         padding: 3vh 0 1vh 0;
     }
 
     .work2_text_box>h3:nth-child(even) {
         font-family: 'Pretendard_L';
-        letter-spacing: 3px;
-        padding-left: 2vh;
+        word-spacing: 3px;
+        color: #ccc;
     }
 
     .work2_con_right {
@@ -2719,15 +2737,15 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 2vh 4vh;
+        padding: 1vh 0;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
-        font-family: 'PC';
     }
 
-    .work_btn>h4>a {
-        font-size: 1.85vh;
+    .work_btn>h4>a>img {
+        width: 25%;
+        margin: 0 auto;
     }
 
     .work_btn>h4:hover {
@@ -2738,6 +2756,8 @@ html {
     #work_sub_Detail {
         display: flex;
         flex-direction: column;
+        width: 92% !important;
+
         gap: 5vh;
     }
 
@@ -2746,7 +2766,6 @@ html {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        width: 92%;
         margin: 0 auto;
         gap: 5%;
     }
@@ -2772,7 +2791,6 @@ html {
         align-items: start;
         justify-content: center;
         gap: 5vh;
-        width: 92%;
         margin: 0 auto;
     }
 
@@ -2842,6 +2860,7 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: start;
+        width: 92% !important;
         gap: 10vh;
         overflow: hidden;
     }
@@ -3469,6 +3488,8 @@ html {
         align-items: start;
         justify-content: center;
         padding-bottom: 10vh;
+        width: 92% !important;
+
     }
 
     #work_sub_Preview>div {
@@ -3511,11 +3532,27 @@ html {
         font-family: 'Pretendard_L';
     }
 
-    .Preview_point a {
-        font-size: 2.5vh;
-        font-family: 'Pretendard_SB';
-        color: #FFA7A7;
-        padding-left: 2vh;
+
+    .link_btn {
+        align-self: center;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        width: 40%;
+    }
+
+    .link_btn:hover {
+        border: 1px solid #FFA7A7;
+
+    }
+
+    .link_btn>a {
+        margin: 0 auto;
+        padding: 0.5vh 3vh;
+        width: 25%;
+    }
+
+    .link_btn>a>img {
+        width: 100%;
     }
 
 

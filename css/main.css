@@ -914,7 +914,7 @@ a {
     .solving1_title>h3,
     .solving2_title>h3 {
         font-family: 'Pretendard_R';
-        letter-spacing: 5px;
+        letter-spacing: 2px;
     }
 
     .solving1_text>h4,
@@ -2073,7 +2073,7 @@ a {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 80%;
+        width: 68%;
         padding: 1%;
         border: 1px solid rgba(255, 255, 255, 0.3);
 
@@ -2303,6 +2303,7 @@ a {
         font-family: 'HG';
         background: rgba(0, 0, 0, 0.5);
         font-size: 4vh;
+        padding: 1vh 0;
     }
 
     .nav {
@@ -2337,7 +2338,7 @@ a {
     }
 
     .nav>ul>li>a {
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         display: block;
     }
 
@@ -2410,11 +2411,12 @@ a {
         font-family: 'HG';
         padding-top: 8vh;
         filter: drop-shadow(0 0 10px rgb(255, 255, 255));
-        letter-spacing: 5px;
+        letter-spacing: 3px;
         /* 글자 사이 간격 */
     }
 
     .intro_title_text>img {
+        width: 78%;
         filter: drop-shadow(0 0 10px rgb(255, 255, 255));
     }
 
@@ -2514,8 +2516,8 @@ a {
 
     .profile_con_right>.profile_name {
         position: absolute;
-        bottom: -3vh;
-        width: 100%;
+        bottom: 0;
+        width: 65%;
     }
 
     .career {
@@ -2639,7 +2641,7 @@ a {
     .skill_back>h4 {
         font-family: 'Pretendard_R';
         letter-spacing: 2px;
-        padding-top: 3vh;
+        padding-top: 2vh;
     }
 
     .skill_back>h5 {
@@ -2737,12 +2739,11 @@ a {
         flex-direction: column-reverse;
         align-items: center;
         justify-self: center;
-        gap: 5vh;
 
     }
 
     .work1_con_B>img {
-        width: 100%;
+        width: 165%;
     }
 
     .work2_con_B>img {
@@ -2750,7 +2751,7 @@ a {
     }
 
     .work3_con_B>img {
-        width: 120%;
+        width: 170%;
     }
 
     .work1_con_left,
@@ -2772,7 +2773,7 @@ a {
     .work1_text_box>h3:nth-child(even),
     .work2_text_box>h3:nth-child(even),
     .work3_text_box>h3:nth-child(even) {
-        padding-left: 2vh;
+        color: #ccc;
     }
 
     .work h2 {
@@ -2782,17 +2783,21 @@ a {
 
     .work h3:nth-child(odd) {
         font-family: 'Pretendard_R';
-        letter-spacing: 5px;
+        word-spacing: 3px;
     }
 
     .work h3:nth-child(even) {
         font-family: 'Pretendard_L';
-        letter-spacing: 3px;
+        word-spacing: 3px;
+    }
+
+    .work_con_B .work_text_group>h3 {
+        color: #ccc;
+        word-spacing: 3px;
     }
 
     .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
-        letter-spacing: 4px;
         /* 평소에는 3줄 정도만 보이도록 높이를 제한합니다. */
         max-height: 0px;
         overflow: hidden;
@@ -2800,6 +2805,7 @@ a {
         transition: max-height 0.5s ease-in-out;
         /* 부드러운 전환 효과 추가 */
         margin-bottom: 10px;
+        word-spacing: 3px;
     }
 
     .work_text_group>h3.active {
@@ -2844,7 +2850,7 @@ a {
 
     .work_btn>h4:hover {
         background: #A648ED;
-        
+
     }
 
     /* solving style */
@@ -2945,8 +2951,9 @@ a {
     .solving1_text>h4,
     .solving2_text>h4 {
         font-family: 'Pretendard_L';
-        letter-spacing: 3px;
-        padding-left: 3vh;
+        padding-left: 1vh;
+        word-spacing: 3px;
+        line-height: 20px;
     }
 
     /* solving2 style */
@@ -2996,6 +3003,7 @@ a {
         justify-content: start;
         gap: 5vh;
         overflow: hidden;
+        padding-bottom: 15vh;
     }
 
     .contact_title {

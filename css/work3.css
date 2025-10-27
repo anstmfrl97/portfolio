@@ -329,17 +329,17 @@ html {
 
     .work3_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     .work3_text_box>h3:nth-child(even) {
         font-family: 'Pretendard_L';
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     /* work btn style */
@@ -353,15 +353,15 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 2vh 4vh;
+        padding: 1vh 2vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
-        font-family: 'PC';
     }
 
-    .work_btn>h4>a {
-        font-size: 1.85vh;
+    .work_btn>h4>a>img {
+        width: 25%;
+        margin: 0 auto;
     }
 
     .work_btn>h4:hover {
@@ -1061,7 +1061,7 @@ html {
         width: 90% !important;
     }
 
-            .flow_con {
+    .flow_con {
         display: flex;
         flex-direction: row;
         gap: 5vh;
@@ -1098,11 +1098,20 @@ html {
         font-family: 'Pretendard_L';
     }
 
-    .Flowchart_point a {
-        font-size: 2.5vh;
-        font-family: 'Pretendard_SB';
-        color: #00A3DB;
-        padding-left: 2vh;
+    .link_btn {
+        align-self: center;        
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+    }
+
+    .link_btn>a {
+        margin: 0 auto;
+        padding: 0.5vh 3vh;
+        width: 25%;
+    }
+
+    .link_btn>a>img {
+        width: 100%;
     }
 
 
@@ -1347,17 +1356,18 @@ html {
 
     .work3_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     .work3_text_box>h3:nth-child(even) {
         font-family: 'Pretendard_L';
-        letter-spacing: 5px;
+        letter-spacing: 3px;
     }
 
     .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
-        letter-spacing: 5px;
+                letter-spacing: 3px;
+
     }
 
     /* work btn style */
@@ -1371,15 +1381,15 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 2vh 4vh;
+        padding: 1vh 2vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
-        font-family: 'PC';
     }
 
-    .work_btn>h4>a {
-        font-size: 1.85vh;
+    .work_btn>h4>a>img {
+        width: 25%;
+        margin: 0 auto;
     }
 
     .work_btn>h4:hover {
@@ -2065,7 +2075,8 @@ html {
         gap: 10vh;
         width: 90% !important;
     }
-        .flow_con {
+
+    .flow_con {
         display: flex;
         flex-direction: row;
         gap: 5vh;
@@ -2103,11 +2114,20 @@ html {
         font-family: 'Pretendard_L';
     }
 
-    .Flowchart_point a {
-        font-size: 2.5vh;
-        font-family: 'Pretendard_SB';
-        color: #00A3DB;
-        padding-left: 2vh;
+    .link_btn {
+        align-self: center;        
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+    }
+
+    .link_btn>a {
+        margin: 0 auto;
+        padding: 0.5vh 3vh;
+        width: 25%;
+    }
+
+    .link_btn>a>img {
+        width: 100%;
     }
 
 
@@ -2250,6 +2270,7 @@ html {
         font-family: 'HG';
         background: rgba(0, 0, 0, 0.5);
         font-size: 4vh;
+        padding: 1vh 0;
     }
 
     .nav {
@@ -2284,7 +2305,7 @@ html {
     }
 
     .nav>ul>li>a {
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
         display: block;
     }
 
@@ -2393,13 +2414,12 @@ html {
         flex-direction: column;
         align-items: center;
         justify-self: center;
-        gap: 5vh;
         width: 95%;
         margin: 0 auto;
     }
 
     .work_con_B>img {
-        width: 150%;
+        width: 175%;
     }
 
     .work_con_B>.work2Img {
@@ -2450,14 +2470,14 @@ html {
 
     .work3_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';
-        letter-spacing: 5px;
+        word-spacing: 3px;
         padding: 3vh 0 1vh 0;
     }
 
     .work3_text_box>h3:nth-child(even) {
         font-family: 'Pretendard_L';
-        letter-spacing: 3px;
-        padding-left: 2vh;
+        word-spacing: 3px;
+        color: #ccc;
     }
 
     .work3_con_right {
@@ -2474,15 +2494,15 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 2vh 4vh;
+        padding: 1vh 0;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
-        font-family: 'PC';
     }
 
-    .work_btn>h4>a {
-        font-size: 1.85vh;
+    .work_btn>h4>a>img {
+        width: 25%;
+        margin: 0 auto;
     }
 
     .work_btn>h4:hover {
@@ -3196,11 +3216,27 @@ html {
         font-family: 'Pretendard_L';
     }
 
-    .Flowchart_point a {
-        font-size: 2.5vh;
-        font-family: 'Pretendard_SB';
-        color: #00A3DB;
-        padding-left: 2vh;
+
+    .link_btn {
+        align-self: center;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 999px;
+        width: 40%;
+    }
+
+    .link_btn:hover {
+        border: 1px solid #00A3DB;
+
+    }
+
+    .link_btn>a {
+        margin: 0 auto;
+        padding: 0.5vh 3vh;
+        width: 25%;
+    }
+
+    .link_btn>a>img {
+        width: 100%;
     }
 
 
