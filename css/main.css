@@ -432,13 +432,13 @@ a {
     }
 
     .i0 {
-        left: 28%;
+        left: 20%;
         width: 13vh;
     }
 
     .i1 {
-        left: 50%;
-        top: 3%;
+        left: 42%;
+        top: 6%;
         width: 10vh;
     }
 
@@ -610,7 +610,147 @@ a {
         cursor: grab;
         box-sizing: border-box;
         margin: 0 3vh;
-        gap: 10vh;
+        gap: 5vh;
+    }
+
+    /* 2. 막대 그래프 컨테이너 (배경) */
+    .bar-container {
+        width: 80%;
+        /* 카드 너비 대비 막대 너비 */
+        height: 10px;
+        border-radius: 10px;
+        /* 둥근 모서리 */
+        background-color: rgba(255, 255, 255, 0.1);
+        /* 옅은 흰색 배경 (유리 투명도) */
+        box-shadow:
+            0 4px 6px rgba(0, 0, 0, 0.1),
+            /* 약간의 그림자 */
+            inset 0 0px 4px rgba(255, 255, 255, 0.3);
+        /* 내부 하이라이트 (유리 표면 빛 반사) */
+
+        /* 유리의 핵심: 배경 흐림 효과 */
+        backdrop-filter: blur(5px);
+        /* 뒤에 있는 요소가 흐려 보이게 함 */
+        -webkit-backdrop-filter: blur(5px);
+        /* 사파리 호환성 */
+
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        /* 옅은 테두리 */
+        overflow: hidden;
+        /* bar-fill이 튀어나오지 않게 숨김 */
+    }
+
+    /* 3. 막대 그래프 채우기 (애니메이션 대상) */
+    .bar-fill {
+        height: 80%;
+        background-color: #A648ED;
+        /* 막대 색상 */
+        /* ⭐️ 초기 폭을 0%로 설정해야 GSAP로 채울 수 있습니다. */
+        width: 0%;
+        border-radius: 999px;
+        background: linear-gradient(90deg,
+                #cfa1f2,
+                /* 옅은 파란색 (밝은 부분) */
+                #A648ED
+                /* 진한 파란색 (어두운 부분/깊이) */
+            );
+
+        /* 액체 표면의 반사광 효과 */
+        position: relative;
+        top: 1px;
+        left: 1px;
+        box-shadow: 0 0 10px #A648ED;
+        /* 외부 발광 효과 */
+        transition: width 0.8s ease-out
+    }
+
+    .bar-fill::after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 3px;
+        width: 95%;
+        height: 40%;
+
+        /* 왼쪽 위에서 대각선으로 빛이 반사되는 효과 */
+        background: linear-gradient(8deg,
+                rgba(255, 255, 255, 0.7) 0%,
+                /* 반사 시작 */
+                rgba(255, 255, 255, 0.2) 70%
+                /* 반사 끝 */
+            );
+        filter: blur(1px);
+    }
+
+    .img_glass {
+        /* 레이아웃 설정 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        /* 크기 조절 필요 */
+        height: 120px;
+        /* 크기 조절 필요 */
+        margin: 20px auto;
+        position: relative;
+        overflow: hidden;
+        background-clip: padding-box;
+        border-radius: 16px;
+
+        /* 입체감 있는 그림자 */
+        box-shadow:
+            0 4px 12px rgba(0, 0, 0, 0.3),
+            /* 밖으로 나가는 그림자 */
+            inset 0 1px 1px rgba(255, 255, 255, 0.4);
+        /* 내부 하이라이트 */
+    }
+
+    .img_glass>img {
+        /* 이미지 크기 */
+        width: 105%;
+        object-fit: cover;
+
+        /* 이미지 자체에 입체감과 발광 효과 */
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3))
+            /* 옅은 발광 효과 */
+            contrast(1.2);
+        /* 대비를 높여 선명하게 */
+    }
+
+    .figma_glass>img {
+        width: 80%;
+    }
+
+    .html_glass>img,
+    .css_glass>img {
+        width: 70%;
+    }
+
+    .react_glass>img {
+        width: 85%;
+    }
+
+    .img_glass::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        pointer-events: none;
+        /* 클릭 방지 */
+
+        /* 대각선으로 움직이는 반사광 */
+        background: linear-gradient(45deg,
+                rgba(255, 255, 255, 0.25) 0%,
+                /* 강한 하이라이트 시작 */
+                rgba(255, 255, 255, 0) 70%
+                /* 흐려짐 */
+            );
+        border: 2px solid transparent;
+        border-image: linear-gradient(45deg, #ffffff, #00000000) 1;
+        filter: blur(3px);
     }
 
     .skill_back {
@@ -992,13 +1132,13 @@ a {
 
     .i5 {
         left: 5%;
-        top: -20vh;
+        top: -8vh;
         width: 11vh;
     }
 
     .i6 {
         left: 0%;
-        top: -6%;
+        top: 13%;
         width: 10vh;
     }
 
@@ -1010,7 +1150,7 @@ a {
 
     .i8 {
         left: 62%;
-        top: -22%;
+        top: -9%;
         width: 5vh;
     }
 
@@ -1022,7 +1162,7 @@ a {
 
     .i10 {
         left: 85%;
-        top: -33%;
+        top: -17%;
         width: 25vh;
     }
 
@@ -1130,6 +1270,7 @@ a {
         font-family: 'HG';
         letter-spacing: 5px;
     }
+
 }
 
 @media (min-width:768px) and (max-width:1536px) {
@@ -1466,40 +1607,41 @@ a {
         overflow: hidden;
     }
 
-    .icon {
+    #profile_wrap .icon {
         position: absolute;
-        top: -100px;
         display: grid;
         place-items: center;
         z-index: 1;
     }
 
     .i0 {
-        left: 28%;
+        left: 9%;
+        top: -14vh;
         width: 13vh;
     }
 
     .i1 {
-        left: 50%;
-        top: 3%;
+        left: 33%;
+        top: -5%;
         width: 10vh;
     }
 
     .i2 {
-        left: 57%;
+        left: 50%;
+                top: -13vh;
         transform: translateX(-50%);
-        width: 7vh;
+        width: 6vh;
     }
 
     .i3 {
-        left: 65%;
-        top: 1%;
-        width: 10vh;
+        left: 61%;
+        top: -10%;
+        width: 9vh;
     }
 
     .i4 {
         left: 85%;
-        top: -20%;
+        top: -29%;
         width: 25vh;
     }
 
@@ -1653,8 +1795,149 @@ a {
         cursor: grab;
         box-sizing: border-box;
         margin: 0 3vh;
-        gap: 10vh;
+        gap: 5vh;
     }
+
+    /* 2. 막대 그래프 컨테이너 (배경) */
+    .bar-container {
+        width: 80%;
+        /* 카드 너비 대비 막대 너비 */
+        height: 10px;
+        border-radius: 10px;
+        /* 둥근 모서리 */
+        background-color: rgba(255, 255, 255, 0.1);
+        /* 옅은 흰색 배경 (유리 투명도) */
+        box-shadow:
+            0 4px 6px rgba(0, 0, 0, 0.1),
+            /* 약간의 그림자 */
+            inset 0 0px 4px rgba(255, 255, 255, 0.3);
+        /* 내부 하이라이트 (유리 표면 빛 반사) */
+
+        /* 유리의 핵심: 배경 흐림 효과 */
+        backdrop-filter: blur(5px);
+        /* 뒤에 있는 요소가 흐려 보이게 함 */
+        -webkit-backdrop-filter: blur(5px);
+        /* 사파리 호환성 */
+
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        /* 옅은 테두리 */
+        overflow: hidden;
+        /* bar-fill이 튀어나오지 않게 숨김 */
+    }
+
+    /* 3. 막대 그래프 채우기 (애니메이션 대상) */
+    .bar-fill {
+        height: 80%;
+        background-color: #A648ED;
+        /* 막대 색상 */
+        /* ⭐️ 초기 폭을 0%로 설정해야 GSAP로 채울 수 있습니다. */
+        width: 0%;
+        border-radius: 999px;
+        background: linear-gradient(90deg,
+                #cfa1f2,
+                /* 옅은 파란색 (밝은 부분) */
+                #A648ED
+                /* 진한 파란색 (어두운 부분/깊이) */
+            );
+
+        /* 액체 표면의 반사광 효과 */
+        position: relative;
+        top: 1px;
+        left: 1px;
+        box-shadow: 0 0 10px #A648ED;
+        /* 외부 발광 효과 */
+        transition: width 0.8s ease-out
+    }
+
+    .bar-fill::after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 3px;
+        width: 95%;
+        height: 40%;
+
+        /* 왼쪽 위에서 대각선으로 빛이 반사되는 효과 */
+        background: linear-gradient(8deg,
+                rgba(255, 255, 255, 0.7) 0%,
+                /* 반사 시작 */
+                rgba(255, 255, 255, 0.2) 70%
+                /* 반사 끝 */
+            );
+        filter: blur(1px);
+    }
+
+    .img_glass {
+        /* 레이아웃 설정 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        /* 크기 조절 필요 */
+        height: 120px;
+        /* 크기 조절 필요 */
+        margin: 20px auto;
+        position: relative;
+        overflow: hidden;
+        background-clip: padding-box;
+        border-radius: 16px;
+
+        /* 입체감 있는 그림자 */
+        box-shadow:
+            0 4px 12px rgba(0, 0, 0, 0.3),
+            /* 밖으로 나가는 그림자 */
+            inset 0 1px 1px rgba(255, 255, 255, 0.4);
+        /* 내부 하이라이트 */
+    }
+
+    .img_glass>img {
+        /* 이미지 크기 */
+        width: 105%;
+        object-fit: cover;
+
+        /* 이미지 자체에 입체감과 발광 효과 */
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3))
+            /* 옅은 발광 효과 */
+            contrast(1.2);
+        /* 대비를 높여 선명하게 */
+    }
+
+    .figma_glass>img {
+        width: 80%;
+    }
+
+    .html_glass>img,
+    .css_glass>img {
+        width: 70%;
+    }
+
+    .react_glass>img {
+        width: 85%;
+    }
+
+    .img_glass::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        pointer-events: none;
+        /* 클릭 방지 */
+
+        /* 대각선으로 움직이는 반사광 */
+        background: linear-gradient(45deg,
+                rgba(255, 255, 255, 0.25) 0%,
+                /* 강한 하이라이트 시작 */
+                rgba(255, 255, 255, 0) 70%
+                /* 흐려짐 */
+            );
+        border: 2px solid transparent;
+        border-image: linear-gradient(45deg, #ffffff, #00000000) 1;
+        filter: blur(3px);
+    }
+
 
     .skill_back {
         display: block, flex;
@@ -2033,27 +2316,35 @@ a {
         /* 글자 사이 간격 */
     }
 
+        #contact_wrap .icon {
+        position: absolute;
+        display: grid;
+        place-items: center;
+        z-index: 1;
+    }
+
     .i5 {
-        left: 5%;
-        top: -20vh;
+        left: 7%;
+        top: -17vh;
         width: 11vh;
     }
 
     .i6 {
         left: 0%;
-        top: -6%;
+        top: 0%;
         width: 10vh;
     }
 
     .i7 {
-        left: 18%;
+        left: 22%;
+        top: -16vh;
         transform: translateX(-50%);
         width: 9vh;
     }
 
     .i8 {
         left: 62%;
-        top: -22%;
+        top: -17%;
         width: 5vh;
     }
 
@@ -2612,11 +2903,152 @@ a {
         cursor: grab;
         box-sizing: border-box;
         margin: 0 3vh;
-        gap: 10vh;
+        gap: 5vh;
     }
 
+    /* 2. 막대 그래프 컨테이너 (배경) */
+    .bar-container {
+        width: 80%;
+        /* 카드 너비 대비 막대 너비 */
+        height: 10px;
+        border-radius: 10px;
+        /* 둥근 모서리 */
+        background-color: rgba(255, 255, 255, 0.1);
+        /* 옅은 흰색 배경 (유리 투명도) */
+        box-shadow:
+            0 4px 6px rgba(0, 0, 0, 0.1),
+            /* 약간의 그림자 */
+            inset 0 0px 4px rgba(255, 255, 255, 0.3);
+        /* 내부 하이라이트 (유리 표면 빛 반사) */
+
+        /* 유리의 핵심: 배경 흐림 효과 */
+        backdrop-filter: blur(5px);
+        /* 뒤에 있는 요소가 흐려 보이게 함 */
+        -webkit-backdrop-filter: blur(5px);
+        /* 사파리 호환성 */
+
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        /* 옅은 테두리 */
+        overflow: hidden;
+        /* bar-fill이 튀어나오지 않게 숨김 */
+    }
+
+    /* 3. 막대 그래프 채우기 (애니메이션 대상) */
+    .bar-fill {
+        height: 80%;
+        background-color: #A648ED;
+        /* 막대 색상 */
+        /* ⭐️ 초기 폭을 0%로 설정해야 GSAP로 채울 수 있습니다. */
+        width: 0%;
+        border-radius: 999px;
+        background: linear-gradient(90deg,
+                #cfa1f2,
+                /* 옅은 파란색 (밝은 부분) */
+                #A648ED
+                /* 진한 파란색 (어두운 부분/깊이) */
+            );
+
+        /* 액체 표면의 반사광 효과 */
+        position: relative;
+        top: 1px;
+        left: 1px;
+        box-shadow: 0 0 10px #A648ED;
+        /* 외부 발광 효과 */
+        transition: width 0.8s ease-out
+    }
+
+    .bar-fill::after {
+        content: '';
+        position: absolute;
+        top: 1px;
+        left: 3px;
+        width: 95%;
+        height: 40%;
+
+        /* 왼쪽 위에서 대각선으로 빛이 반사되는 효과 */
+        background: linear-gradient(8deg,
+                rgba(255, 255, 255, 0.7) 0%,
+                /* 반사 시작 */
+                rgba(255, 255, 255, 0.2) 70%
+                /* 반사 끝 */
+            );
+        filter: blur(1px);
+    }
+
+    .img_glass {
+        /* 레이아웃 설정 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+        /* 크기 조절 필요 */
+        height: 120px;
+        /* 크기 조절 필요 */
+        margin: 20px auto;
+        position: relative;
+        overflow: hidden;
+        background-clip: padding-box;
+        border-radius: 16px;
+
+        /* 입체감 있는 그림자 */
+        box-shadow:
+            0 4px 12px rgba(0, 0, 0, 0.3),
+            /* 밖으로 나가는 그림자 */
+            inset 0 1px 1px rgba(255, 255, 255, 0.4);
+        /* 내부 하이라이트 */
+    }
+
+    .img_glass>img {
+        /* 이미지 크기 */
+        width: 105%;
+        object-fit: cover;
+
+        /* 이미지 자체에 입체감과 발광 효과 */
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3))
+            /* 옅은 발광 효과 */
+            contrast(1.2);
+        /* 대비를 높여 선명하게 */
+    }
+
+    .figma_glass>img {
+        width: 80%;
+    }
+
+    .html_glass>img,
+    .css_glass>img {
+        width: 70%;
+    }
+
+    .react_glass>img {
+        width: 85%;
+    }
+
+    .img_glass::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        pointer-events: none;
+        /* 클릭 방지 */
+
+        /* 대각선으로 움직이는 반사광 */
+        background: linear-gradient(45deg,
+                rgba(255, 255, 255, 0.25) 0%,
+                /* 강한 하이라이트 시작 */
+                rgba(255, 255, 255, 0) 70%
+                /* 흐려짐 */
+            );
+        border: 2px solid transparent;
+        border-image: linear-gradient(45deg, #ffffff, #00000000) 1;
+        filter: blur(3px);
+    }
+
+
     .skill_back {
-        display: block, flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -2625,7 +3057,8 @@ a {
         box-shadow: 0 0px 20px rgba(0, 0, 0, 0.7),
             inset 0 0px 30px rgba(255, 255, 255, 0.7);
         box-sizing: border-box;
-        margin: 0 3vh;
+        text-align: center;
+        padding: 0 3vh;
     }
 
     .skill_inner>.skill_front>.skill_icon {
