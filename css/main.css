@@ -1470,12 +1470,12 @@ a {
 
     .nav_proflie {
         top: 55vh;
-        left: 20vh;
+        left: 10%;
     }
 
     .nav_skill {
         top: 25vh;
-        left: 45vh;
+        left: 23%;
     }
 
     .nav_work {
@@ -1518,18 +1518,14 @@ a {
 
     }
 
-
-
-
-
     .nav_solving {
         top: 25vh;
-        right: 45vh;
+        right: 23%;
     }
 
     .nav_contact {
         top: 55vh;
-        right: 20vh;
+        right: 10%;
     }
 
     .nav_proflie:hover>a>img {
