@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const workSections = gsap.utils.toArray("#work_wrap .work");
   const totalWorkSections = workSections.length;
 
+      alert('이 페이지는 1920*1080 사이즈에 최적화 되어있습니다.');//경고 메시지 창띄우기
+
+
 
 
 
