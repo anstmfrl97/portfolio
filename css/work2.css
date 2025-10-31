@@ -3084,7 +3084,7 @@ html {
         align-items: center;
         justify-content: center;
         width: 100%;
-        gap: 10vh;
+        gap: 5vh;
     }
 
     .logo_L {
@@ -3094,7 +3094,7 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 19% 3%;
+        padding: 20% 7%;
         width: 80%;
     }
 
@@ -3169,7 +3169,7 @@ html {
         align-items: center;
         justify-content: center;
         width: 100%;
-        gap: 10vh;
+        gap: 5vh;
     }
 
     .slogun_L {
@@ -3179,7 +3179,7 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 39% 3%;
+        padding: 44% 7%;
         width: 80%;
     }
 
@@ -3577,6 +3577,8 @@ html {
 
     .margin>h2 {
         font-family: 'Pretendard_SB';
+                font-size: 2.5vh;
+
     }
 
     .margin>h3 {
