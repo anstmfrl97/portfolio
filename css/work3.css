@@ -340,6 +340,7 @@ html {
     .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
         letter-spacing: 3px;
+
     }
 
     /* work btn style */
@@ -665,7 +666,6 @@ html {
 
     .icon_point>div>h3 {
         font-family: 'Pretendard_L';
-
     }
 
     /* color style */
@@ -1099,7 +1099,7 @@ html {
     }
 
     .link_btn {
-        align-self: center;        
+        align-self: center;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
     }
@@ -1366,7 +1366,7 @@ html {
 
     .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
-                letter-spacing: 3px;
+        letter-spacing: 3px;
 
     }
 
@@ -1381,14 +1381,14 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 1vh 2vh;
+        padding: 1vh 1vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
     }
 
     .work_btn>h4>a>img {
-        width: 25%;
+        width: 20%;
         margin: 0 auto;
     }
 
@@ -2115,15 +2115,15 @@ html {
     }
 
     .link_btn {
-        align-self: center;        
+        align-self: center;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
     }
 
     .link_btn>a {
         margin: 0 auto;
-        padding: 0.5vh 3vh;
-        width: 25%;
+        padding: 0.5vh 2vh;
+        width: 20%;
     }
 
     .link_btn>a>img {
@@ -2428,7 +2428,6 @@ html {
 
     .work_con_B .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
-        letter-spacing: 4px;
         /* 평소에는 3줄 정도만 보이도록 높이를 제한합니다. */
         max-height: 0px;
         overflow: hidden;
@@ -2436,6 +2435,9 @@ html {
         transition: max-height 0.5s ease-in-out;
         /* 부드러운 전환 효과 추가 */
         margin-bottom: 10px;
+        color: #ccc;
+        word-spacing: 3px;
+
     }
 
     .work_con_B .work_text_group>h3.active {
@@ -2445,7 +2447,7 @@ html {
 
     .work_text_group>h4 {
         font-family: 'Pretendard_R';
-        letter-spacing: 4px;
+        letter-spacing: 1px;
         cursor: pointer;
         background: none;
         border: none;
@@ -2494,14 +2496,14 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 1vh 0;
+        padding: 1vh 1vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
     }
 
     .work_btn>h4>a>img {
-        width: 25%;
+        width: 20%;
         margin: 0 auto;
     }
 
@@ -2663,13 +2665,13 @@ html {
             inset 0 0px 30px rgba(255, 255, 255, 0.5);
         cursor: grab;
         box-sizing: border-box;
-        padding: 5%;
+        padding: 9%;
     }
 
     .gaide_sub_title {
         display: flex;
         flex-direction: row;
-        padding: 2vh 0;
+        padding-bottom: 2vh;
     }
 
     .Gaide_inner .work_text_group {
@@ -2734,7 +2736,6 @@ html {
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        gap: 2vh;
         width: 90%;
     }
 
@@ -2745,6 +2746,7 @@ html {
         justify-content: center;
         gap: 3vh;
         margin: 0 auto;
+        margin-top: 1vh;
     }
 
     .logo_rule>div {
@@ -2752,12 +2754,11 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: end;
-        gap: 2vh;
         position: relative;
     }
 
     .logo_ratio>img {
-        width: 40%;
+        width: 90%;
     }
 
     .logo_rule>div>h4 {
@@ -2778,7 +2779,9 @@ html {
     }
 
     .logo_rule>div:first-child:before {
-        top: 11%;
+        top: 35%;
+        transform: rotate(25deg);
+
     }
 
     /* icon style */
@@ -2815,10 +2818,6 @@ html {
         justify-content: center;
     }
 
-    .icon_rule>div>h4 {
-        padding-bottom: 2vh;
-    }
-
     .icon_img {
         display: flex;
         flex-direction: row;
@@ -2830,6 +2829,7 @@ html {
 
     .icon_img>img {
         height: 30px;
+        padding-top: 1vh;
     }
 
     .icon_point {
@@ -2849,6 +2849,7 @@ html {
 
     .icon_point>div>h3 {
         font-family: 'Pretendard_L';
+        font-size: 2vh;
 
     }
 
@@ -2907,7 +2908,7 @@ html {
     }
 
     .value_rule {
-        width: 80%;
+        width: 95%;
     }
 
     .value_img {
@@ -2933,8 +2934,14 @@ html {
         justify-content: start;
     }
 
+    .color_point>div:first-child {
+        padding-top: 1vh;
+    }
+
     .color_point h3 {
         font-family: 'Pretendard_L';
+        font-size: 2vh;
+
     }
 
     /* font style */
@@ -2946,7 +2953,6 @@ html {
         justify-content: center;
         gap: 5vh;
         width: 100%;
-        padding-top: 5vh;
     }
 
     .font_T {
@@ -2978,7 +2984,6 @@ html {
     .font_pre>h3:first-child {
         font-size: 3vh;
         letter-spacing: 3px;
-        padding-bottom: 2vh;
     }
 
     .font_hylia h3 {
@@ -2991,14 +2996,19 @@ html {
         font-family: 'Vitro' !important;
         font-size: 1.8vh;
         letter-spacing: 2px;
-        padding-bottom: 1vh;
     }
 
     .font_pre h3 {
         font-family: 'Pretendard_R' !important;
         font-size: 1.8vh;
         letter-spacing: 2px;
-        padding-bottom: 1vh;
+    }
+
+
+    .font_hylia>div>h3,
+    .font_vitro>div>h3,
+    .font_pre>div>h3 {
+        padding-top: 1vh;
     }
 
     .font_B {
@@ -3033,9 +3043,8 @@ html {
     }
 
     .gaide_margin>img {
-        width: 75%;
+        width: 85%;
         margin: 0 auto;
-        padding-bottom: 3vh;
     }
 
     .margin {
@@ -3044,6 +3053,12 @@ html {
         align-items: start;
         justify-content: center;
         gap: 2vh;
+
+    }
+
+    .category_margin {
+        padding-top: 1vh;
+
     }
 
     .margin>h2 {
@@ -3052,20 +3067,21 @@ html {
 
     .margin>h3 {
         font-family: 'Pretendard_L';
+        font-size: 2vh;
     }
 
     .category_margin::after {
         content: '';
-        width: 83%;
+        width: 79%;
         height: 2px;
         background: #E979FF;
         position: relative;
-        top: -9vh;
+        top: -6.5vh;
     }
 
     .img_margin::after {
         content: '';
-        width: 75%;
+        width: 70%;
         height: 2px;
         background: #5DFF4E;
         position: relative;
@@ -3074,7 +3090,7 @@ html {
 
     .con_margin::after {
         content: '';
-        width: 76%;
+        width: 70%;
         height: 2px;
         background: #5D65FF;
         position: relative;
@@ -3083,8 +3099,9 @@ html {
 
     .all_margin::after {
         content: '';
-        width: 57%;
+        width: 54%;
         height: 2px;
+
         background: #FF6565;
         position: relative;
         top: -6.5vh;
@@ -3092,7 +3109,7 @@ html {
 
     .title_s_margin::after {
         content: '';
-        width: 55%;
+        width: 51%;
         height: 2px;
         background: #0CFFCE;
         position: relative;
@@ -3101,7 +3118,7 @@ html {
 
     .title_margin::after {
         content: '';
-        width: 95%;
+        width: 89%;
         height: 2px;
         background: #FFF956;
         position: relative;
@@ -3115,8 +3132,11 @@ html {
         align-items: start;
         justify-content: center;
         width: 100%;
-        gap: 3vh;
-        padding-top: 2vh;
+    }
+
+    .gaide_layout>div {
+        display: flex;
+        flex-direction: column;
     }
 
     .layout_L {
@@ -3162,6 +3182,8 @@ html {
 
     .layout_R {
         margin: 0 auto;
+        padding-bottom: 1vh;
+
     }
 
     .layout_R>img {
@@ -3226,13 +3248,12 @@ html {
 
     .link_btn:hover {
         border: 1px solid #00A3DB;
-
     }
 
     .link_btn>a {
         margin: 0 auto;
-        padding: 0.5vh 3vh;
-        width: 25%;
+        padding: 0.5vh 2vh;
+        width: 20%;
     }
 
     .link_btn>a>img {

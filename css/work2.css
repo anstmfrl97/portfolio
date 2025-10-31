@@ -1565,14 +1565,14 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 1vh 2vh;
+        padding: 1vh 1vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
     }
 
     .work_btn>h4>a>img {
-        width: 25%;
+        width: 20%;
         margin: 0 auto;
     }
 
@@ -2507,8 +2507,8 @@ html {
 
     .link_btn>a {
         margin: 0 auto;
-        padding: 0.5vh 3vh;
-        width: 25%;
+        padding: 0.5vh 2vh;
+        width: 20%;
     }
 
     .link_btn>a>img {
@@ -2806,9 +2806,9 @@ html {
         width: 100%;
     }
 
-    .work2_text_box>.work_text_group>h3 {
+    .work_con_B .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
-        letter-spacing: 4px;
+        word-spacing: 3px;
         /* 평소에는 3줄 정도만 보이도록 높이를 제한합니다. */
         max-height: 0px;
         overflow: hidden;
@@ -2816,16 +2816,17 @@ html {
         transition: max-height 0.5s ease-in-out;
         /* 부드러운 전환 효과 추가 */
         margin-bottom: 10px;
+        color: #ccc;
     }
 
-    .work_text_group>h3.active {
+    .work_con_B .work_text_group>h3.active {
         max-height: 1000px;
         /* 충분히 큰 값으로 설정하여 전체 내용이 보이도록 함 */
     }
 
     .work_text_group>h4 {
         font-family: 'Pretendard_R';
-        letter-spacing: 4px;
+        letter-spacing: 1px;
         cursor: pointer;
         background: none;
         border: none;
@@ -2874,14 +2875,14 @@ html {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 1vh 0;
+        padding: 1vh 1vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
     }
 
     .work_btn>h4>a>img {
-        width: 25%;
+        width: 20%;
         margin: 0 auto;
     }
 
@@ -3040,17 +3041,17 @@ html {
             inset 0 0px 30px rgba(255, 255, 255, 0.5);
         cursor: grab;
         box-sizing: border-box;
-        padding: 2%;
+        padding: 9%;
     }
 
     .gaide_sub_title {
         display: flex;
         flex-direction: row;
-        padding: 2vh 2vh;
+        padding-bottom: 2vh;
     }
 
 
-    .work_text_group {
+    #work_sub_Gaide .work_text_group {
         max-height: 0px;
         overflow: hidden;
         /* 넘치는 내용을 숨김 */
@@ -3059,7 +3060,7 @@ html {
         margin-bottom: 10px;
     }
 
-    .work_text_group.active {
+    #work_sub_Gaide .work_text_group.active {
         max-height: 10000px;
         /* 충분히 큰 값으로 설정하여 전체 내용이 보이도록 함 */
     }
@@ -3121,9 +3122,6 @@ html {
         width: 90%;
     }
 
-    .logo_R>h3 {
-        padding-bottom: 2vh;
-    }
 
     .logo_R>.logo_rule {
         display: grid;
@@ -3140,10 +3138,11 @@ html {
         justify-content: end;
         gap: 2vh;
         position: relative;
+        margin-top: 2vh;
     }
 
     .logo_ratio>img {
-        width: 40%;
+        width: 63%;
     }
 
     .logo_rule>div>h4 {
@@ -3153,18 +3152,14 @@ html {
     .logo_rule>div::before {
         content: "";
         position: absolute;
-        width: 115%;
+        width: 140%;
         height: 2px;
         background-color: red;
         top: 0%;
         left: 0%;
-        transform: rotate(35deg);
+        transform: rotate(45deg);
         transform-origin: 0 0;
         /* 회전 기준점을 왼쪽 상단으로 설정 */
-    }
-
-    .logo_rule>div:first-child:before {
-        top: 11%;
     }
 
     /* slogun style */
@@ -3203,9 +3198,8 @@ html {
         justify-content: center;
         width: 90%;
     }
-
-    .slogun_R>h3 {
-        padding-bottom: 2vh;
+    .slogun_ratio{
+        margin-top: 2vh;
     }
 
     .slogun_R>.slogun_rule {
@@ -3252,8 +3246,7 @@ html {
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        width: 95%;
-        margin: 0 auto;
+        width: 100%;
         gap: 15vh;
     }
 
@@ -3285,7 +3278,6 @@ html {
     }
 
     .icon_img {
-        padding-top: 2vh;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -3296,6 +3288,7 @@ html {
 
     .icon_img>img {
         width: 38px;
+        margin-top: 1vh;
     }
 
     .icon_point {
@@ -3314,6 +3307,7 @@ html {
 
     .icon_point>div>h3 {
         font-family: 'Pretendard_L';
+        font-size: 2vh;
     }
 
         /* button style */
@@ -3322,10 +3316,7 @@ html {
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        width: 95%;
-        margin: 0 auto;
-        gap: 15vh;
-        padding-top: 3vh;
+        width: 100%;
     }
 
     .button_inner {
@@ -3389,6 +3380,7 @@ html {
     }
     .button_point>div>h3{
         font-family: 'Pretendard_L';
+        font-size: 2vh;
     }
 
     /* color style */
@@ -3407,7 +3399,7 @@ html {
         align-items: center;
         justify-content: center;
         gap: 3vh;
-        padding-bottom: 10vh;
+        padding-bottom: 5vh;
     }
 
     .main_color,
@@ -3491,6 +3483,7 @@ html {
 
     .color_point h3 {
         font-family: 'Pretendard_L';
+        font-size: 2vh;
     }
 
     /* font style */
@@ -3516,12 +3509,12 @@ html {
     .font_L>h3 {
         font-family: 'Pretendard_SB';
         letter-spacing: 3px;
-        padding-bottom: 2vh;
     }
 
     .font_L>.work_text_group>h3 {
         font-family: 'Pretendard_R';
-        padding-bottom: 1vh;
+        padding-top: 1vh;
+        font-size: 1.8vh;
     }
 
     .font_L>img {
@@ -3570,7 +3563,7 @@ html {
     }
 
     .gaide_margin>img {
-        width: 60%;
+        width: 75%;
         padding-bottom: 3vh;
     }
 
@@ -3589,11 +3582,12 @@ html {
     .margin>h3 {
         font-family: 'Pretendard_L';
         padding-bottom: 2vh;
+        font-size: 2vh;
     }
 
     .all_margin::after {
         content: '';
-        width: 47%;
+        width: 50%;
         height: 2px;
         background: #FF6565;
         position: relative;
@@ -3603,7 +3597,7 @@ html {
 
     .con_margin::after {
         content: '';
-        width: 62%;
+        width: 64%;
         height: 2px;
         background: #5D65FF;
         position: relative;
@@ -3613,7 +3607,7 @@ html {
 
     .title_margin::after {
         content: '';
-        width: 85%;
+        width: 88%;
         height: 2px;
         background: #5DFF4E;
         position: relative;
@@ -3623,11 +3617,11 @@ html {
 
     .category_margin::after {
         content: '';
-        width: 68%;
+        width: 71%;
         height: 2px;
         background: #FFF956;
         position: relative;
-        top: -17vh;
+        top: -16vh;
         left: 0%;
     }
 
@@ -3637,8 +3631,7 @@ html {
         flex-direction: column-reverse;
         align-items: start;
         justify-content: center;
-        width: 95%;
-        margin: 0 auto;
+        width: 100%;
     }
 
     .layout_L {
@@ -3689,7 +3682,7 @@ html {
     }
 
     .layout_R>img {
-        width: 90%;
+        width: 85%;
     }
 
     /* Preview style */
@@ -3758,8 +3751,8 @@ html {
 
     .link_btn>a {
         margin: 0 auto;
-        padding: 0.5vh 3vh;
-        width: 25%;
+        padding: 0.5vh 2vh;
+        width: 20%;
     }
 
     .link_btn>a>img {
