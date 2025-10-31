@@ -327,9 +327,9 @@ document.addEventListener('DOMContentLoaded', function () {
       // onLeaveBack: 섹션을 벗어나 위로 돌아갈 때 (원하는 경우 애니메이션 중지 및 초기화)
       onLeaveBack: () => {
         // 기존 tl.pause(0) 대신, 모든 바를 0%로 초기화하는 코드를 넣을 수도 있습니다.
-        // document.querySelectorAll('.bar-fill').forEach(bar => {
-        //     gsap.set(bar, { width: '0%' });
-        // });
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+            gsap.set(bar, { width: '0%' });
+        });
 
         // (주의: 이 경우, 스크롤이 다시 내려오면 onEnter가 실행되어 애니메이션이 다시 시작되어야 합니다.)
       }
