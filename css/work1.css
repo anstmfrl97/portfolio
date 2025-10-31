@@ -1584,7 +1584,7 @@ li {
     }
 
     .Detail_color>div>img {
-        width: 100%;
+        width: 70%;
     }
 
     /* work_sub_Part style */
@@ -1678,6 +1678,7 @@ li {
         align-items: start;
         justify-content: start;
         gap: 3vh;
+        padding-top: 5vh;
     }
 
     .part_R>.deco>div {
