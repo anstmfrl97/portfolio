@@ -868,7 +868,7 @@ li {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 1vh 2vh;
+        padding: 1vh 1vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
@@ -876,7 +876,7 @@ li {
     }
 
     .work_btn>h4>a>img {
-        width: 25%;
+        width: 20%;
         margin: 0 auto;
     }
 
@@ -1108,8 +1108,8 @@ li {
 
     .link_btn>a {
         margin: 0 auto;
-        padding: 0.5vh 3vh;
-        width: 25%;
+        padding: 0.5vh 2vh;
+        width: 20%;
     }
 
     .link_btn>a>img {
@@ -1457,7 +1457,7 @@ li {
 
     .work_text_group>h3 {
         font-family: 'Pretendard_L' !important;
-        letter-spacing: 4px;
+        word-spacing: 3px;
         /* 평소에는 3줄 정도만 보이도록 높이를 제한합니다. */
         max-height: 0px;
         overflow: hidden;
@@ -1465,6 +1465,7 @@ li {
         transition: max-height 0.5s ease-in-out;
         /* 부드러운 전환 효과 추가 */
         margin-bottom: 10px;
+        color: #ccc;
     }
 
     .work_text_group>h3.active {
@@ -1490,14 +1491,14 @@ li {
 
     .work_btn>h4 {
         display: inline-block;
-        padding: 1vh 0;
+        padding: 1vh 1vh;
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 999px;
         text-align: center;
     }
 
     .work_btn>h4>a>img {
-        width: 25%;
+        width: 20%;
         margin: 0 auto;
     }
 
@@ -1749,8 +1750,8 @@ li {
 
     .link_btn>a {
         margin: 0 auto;
-        padding: 0.5vh 3vh;
-        width: 25%;
+        padding: 0.5vh 2vh;
+        width: 20%;
     }
 
     .link_btn>a>img {
