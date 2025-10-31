@@ -463,6 +463,36 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }
 
+        //스킬바 애니메이션 제어
+    ScrollTrigger.create({
+      trigger: "#skill_wrap",
+      start: "top 80%",
+
+      // onEnter: 스크롤이 해당 섹션에 진입했을 때 딱 한 번 실행
+      onEnter: () => {
+        // 1. 초기 슬라이드 (activeIndex=0)의 막대 그래프 애니메이션을 바로 실행
+        animateActiveBar();
+
+        // 2. 이후부터 슬라이드가 변경될 때마다 애니메이션이 실행되도록 이벤트 리스너 연결
+        //    (스크롤이 다시 위로 올라가도 이 리스너는 유지됩니다.)
+        runeswiper.on('slideChangeTransitionEnd', animateActiveBar);
+
+        // (선택 사항) ScrollTrigger가 재진입 시 중복 실행 방지를 위해 self.kill()을 사용할 수도 있습니다.
+        // self.kill();
+      },
+
+      // onLeaveBack: 섹션을 벗어나 위로 돌아갈 때 (원하는 경우 애니메이션 중지 및 초기화)
+      onLeaveBack: () => {
+        // 기존 tl.pause(0) 대신, 모든 바를 0%로 초기화하는 코드를 넣을 수도 있습니다.
+        document.querySelectorAll('.bar-fill').forEach(bar => {
+            gsap.set(bar, { width: '0%' });
+        });
+
+        // (주의: 이 경우, 스크롤이 다시 내려오면 onEnter가 실행되어 애니메이션이 다시 시작되어야 합니다.)
+      }
+    });
+
+
     //skill back
     document.querySelectorAll('.skill_box').forEach(card => {
       card.addEventListener('click', () => {
