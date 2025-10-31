@@ -18,7 +18,21 @@ document.addEventListener('DOMContentLoaded', function () {
   const workSections = gsap.utils.toArray("#work_wrap .work");
   const totalWorkSections = workSections.length;
 
-      alert('이 페이지는 1920*1080 사이즈에 최적화 되어있습니다.');//경고 메시지 창띄우기
+    const customAlert = document.getElementById('custom-alert-modal');
+    const closeButton = document.getElementById('close-custom-alert');
+    
+    // 페이지 로드 시 바로 팝업을 표시합니다.
+    if (customAlert) {
+        // (필요하다면 여기에서 localStorage를 사용하여 '하루 안 보기' 로직을 추가할 수 있습니다.)
+        customAlert.classList.remove('hidden');
+    }
+
+    // 닫기 버튼 클릭 시 팝업을 숨깁니다.
+    if (closeButton) {
+        closeButton.addEventListener('click', function() {
+            customAlert.classList.add('hidden');
+        });
+    }
 
 
 
