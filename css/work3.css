@@ -2701,7 +2701,7 @@ html {
         align-items: center;
         justify-content: center;
         width: 100%;
-        gap: 10vh;
+        gap: 5vh;
     }
 
     .logo_L {
@@ -2711,7 +2711,7 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding: 29% 3%;
+        padding: 30% 5%;
         width: 80%;
     }
 
@@ -2792,7 +2792,6 @@ html {
         justify-content: center;
         width: 100%;
         gap: 15vh;
-        padding: 1% 0 0 3%;
     }
 
     .icon_inner {
@@ -2988,20 +2987,17 @@ html {
 
     .font_hylia h3 {
         font-family: 'Hylia' !important;
-        letter-spacing: 2px;
         font-size: 1.8vh;
     }
 
     .font_vitro h3 {
         font-family: 'Vitro' !important;
         font-size: 1.8vh;
-        letter-spacing: 2px;
     }
 
     .font_pre h3 {
         font-family: 'Pretendard_R' !important;
         font-size: 1.8vh;
-        letter-spacing: 2px;
     }
 
 
@@ -3025,7 +3021,7 @@ html {
         grid-template-columns: 1fr 1fr;
         align-items: start;
         justify-content: center;
-        gap: 3vh;
+        gap: 2vh;
         padding-top: 2vh;
     }
 
@@ -3063,6 +3059,8 @@ html {
 
     .margin>h2 {
         font-family: 'Pretendard_SB';
+                font-size: 2.5vh;
+
     }
 
     .margin>h3 {
@@ -3072,7 +3070,7 @@ html {
 
     .category_margin::after {
         content: '';
-        width: 79%;
+        width: 71%;
         height: 2px;
         background: #E979FF;
         position: relative;
@@ -3081,7 +3079,7 @@ html {
 
     .img_margin::after {
         content: '';
-        width: 70%;
+        width: 64%;
         height: 2px;
         background: #5DFF4E;
         position: relative;
@@ -3090,7 +3088,7 @@ html {
 
     .con_margin::after {
         content: '';
-        width: 70%;
+        width: 63%;
         height: 2px;
         background: #5D65FF;
         position: relative;
@@ -3099,7 +3097,7 @@ html {
 
     .all_margin::after {
         content: '';
-        width: 54%;
+        width: 50%;
         height: 2px;
 
         background: #FF6565;
@@ -3109,7 +3107,7 @@ html {
 
     .title_s_margin::after {
         content: '';
-        width: 51%;
+        width: 47%;
         height: 2px;
         background: #0CFFCE;
         position: relative;
@@ -3118,7 +3116,7 @@ html {
 
     .title_margin::after {
         content: '';
-        width: 89%;
+        width: 80%;
         height: 2px;
         background: #FFF956;
         position: relative;
