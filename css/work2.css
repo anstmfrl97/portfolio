@@ -318,13 +318,15 @@ html {
         align-items: start;
         gap: 3vh 0;
     }
-            .tool_icon {
+
+    .tool_icon {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: start;
         gap: 3vh;
     }
+
     .work2_text_box .tool_icon>.photo,
     .work2_text_box .tool_icon>.illust,
     .work2_text_box .tool_icon>.figma,
@@ -875,7 +877,7 @@ html {
 
     }
 
-        /* button style */
+    /* button style */
     .gaide_button {
         display: flex;
         flex-direction: column;
@@ -891,7 +893,7 @@ html {
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        gap: 5vh;
+        gap: 3vh;
     }
 
     .button_rule {
@@ -899,10 +901,49 @@ html {
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 10vh;
+        gap: 25vh;
+        width: 100%;
     }
 
-    .button_P {
+    .button_rule .btn_img1{
+        width: 140%;
+    }
+
+    .btn_hover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .btn_hover>h3 {
+        border-radius: 999px;
+        padding: 2vh 10vh;
+        font-family: 'Pretendard_SB' !important;
+    }
+
+    .btn_hover>.P_btn {
+        border: 2px solid #FFA7A7;
+        color: #FFA7A7;
+    }
+
+    .btn_hover>.P_btn:hover {
+        background: #FFA7A7;
+        color: #ffffff;
+    }
+
+    .btn_hover>.B_btn {
+        border: 2px solid #62B6CB;
+        color: #62B6CB;
+    }
+
+    .btn_hover>.B_btn:hover {
+        background: #62B6CB;
+        color: #ffffff;
+    }
+
+    /* .button_P {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1vh 3vh;
@@ -919,25 +960,27 @@ html {
     .button_B>h3:nth-child(2),
     .button_B>h3:nth-child(3) {
         text-align: center;
-    }
+    } */
 
     .button_rule h3 {
         font-family: 'Pretendard_R';
     }
 
-    .button_point{
+    .button_point {
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: start;
         gap: 1vh;
     }
-    .button_point>div{
+
+    .button_point>div {
         display: flex;
         flex-direction: row;
         align-items: start;
     }
-    .button_point>div>h3{
+
+    .button_point>div>h3 {
         font-family: 'Pretendard_L';
     }
 
@@ -1555,6 +1598,7 @@ html {
         align-items: start;
         gap: 3vh 0;
     }
+
     .tool_icon {
         display: flex;
         flex-direction: row;
@@ -2134,7 +2178,7 @@ html {
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        gap: 5vh;
+        gap: 3vh;
     }
 
     .button_rule {
@@ -2145,7 +2189,41 @@ html {
         gap: 10vh;
     }
 
-    .button_P {
+    .btn_hover {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .btn_hover>h3 {
+        border-radius: 999px;
+        padding: 2vh 10vh;
+        font-family: 'Pretendard_SB' !important;
+    }
+
+    .btn_hover>.P_btn {
+        border: 2px solid #FFA7A7;
+        color: #FFA7A7;
+    }
+
+    .btn_hover>.P_btn:hover {
+        background: #FFA7A7;
+        color: #ffffff;
+    }
+
+    .btn_hover>.B_btn {
+        border: 2px solid #62B6CB;
+        color: #62B6CB;
+    }
+
+    .btn_hover>.B_btn:hover {
+        background: #62B6CB;
+        color: #ffffff;
+    }
+
+    /* .button_P {
         display: grid;
         grid-template-columns: 0.7fr 1fr 1fr;
         gap: 1vh 3vh;
@@ -2163,25 +2241,27 @@ html {
     .button_B>h3:nth-child(3) {
         text-align: center;
         letter-spacing: 1px !important;
-    }
+    } */
 
     .button_rule h3 {
         font-family: 'Pretendard_R';
     }
 
-        .button_point{
+    .button_point {
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: start;
         gap: 0.5vh;
     }
-    .button_point>div{
+
+    .button_point>div {
         display: flex;
         flex-direction: row;
         align-items: start;
     }
-    .button_point>div>h3{
+
+    .button_point>div>h3 {
         font-family: 'Pretendard_L';
     }
 
@@ -2886,7 +2966,7 @@ html {
         align-items: start;
     }
 
-        .tool_icon {
+    .tool_icon {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -2903,7 +2983,7 @@ html {
 
     .work2_text_box .tool_icon>.html,
     .work2_text_box .tool_icon>.css {
-        width:8%;
+        width: 8%;
     }
 
     .work2_text_box>h3:nth-child(odd) {
@@ -3255,7 +3335,8 @@ html {
         justify-content: center;
         width: 90%;
     }
-    .slogun_ratio{
+
+    .slogun_ratio {
         margin-top: 2vh;
     }
 
@@ -3367,7 +3448,7 @@ html {
         font-size: 2vh;
     }
 
-        /* button style */
+    /* button style */
     .gaide_button {
         display: flex;
         flex-direction: column;
@@ -3381,9 +3462,9 @@ html {
         flex-direction: column;
         align-items: start;
         justify-content: center;
-        gap: 5vh;
     }
-    .button_inner>.icon_point{
+
+    .button_inner>.icon_point {
         padding-bottom: 5vh;
     }
 
@@ -3392,9 +3473,44 @@ html {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 2vh;
     }
 
-    .button_P {
+    .btn_hover {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2vh;
+    }
+
+    .btn_hover>h3 {
+        border-radius: 999px;
+        padding: 1vh 4vh;
+        font-family: 'Pretendard_SB' !important;
+    }
+
+    .btn_hover>.P_btn {
+        border: 2px solid #FFA7A7;
+        color: #FFA7A7;
+    }
+
+    .btn_hover>.P_btn:active {
+        background: #FFA7A7;
+        color: #ffffff;
+    }
+
+    .btn_hover>.B_btn {
+        border: 2px solid #62B6CB;
+        color: #62B6CB;
+    }
+
+    .btn_hover>.B_btn:active {
+        background: #62B6CB;
+        color: #ffffff;
+    }
+
+    /* .button_P {
         display: grid;
         grid-template-columns: 1.5fr 1fr 1fr;
         gap: 1vh;
@@ -3412,9 +3528,9 @@ html {
     .button_B>h3:nth-child(2),
     .button_B>h3:nth-child(3) {
         text-align: center;
-    }
+    } */
 
-    .button_rule img{
+    .btn_img img {
         width: 100%;
     }
 
@@ -3422,20 +3538,24 @@ html {
         font-family: 'Pretendard_R';
     }
 
-        .button_point{
+    .button_point {
         display: flex;
         flex-direction: column;
         align-items: start;
         justify-content: start;
         gap: 1vh;
-        padding-bottom: 5vh;
     }
-    .button_point>div{
+
+    .button_point>div {
         display: flex;
         flex-direction: row;
         align-items: start;
     }
-    .button_point>div>h3{
+    .button_point>div:first-child{
+        padding-top: 3vh;
+    }
+
+    .button_point>div>h3 {
         font-family: 'Pretendard_L';
         font-size: 2vh;
     }
@@ -3599,19 +3719,19 @@ html {
 
     .Nav_font {
         font-family: 'Pretendard_SB';
-                font-size: 1.9vh;
+        font-size: 1.9vh;
 
     }
 
     .Body1_font {
         font-family: 'Pretendard_M';
-                font-size: 1.9vh;
+        font-size: 1.9vh;
 
     }
 
     .Body2_font {
         font-family: 'Pretendard_R';
-                font-size: 1.9vh;
+        font-size: 1.9vh;
 
     }
 
@@ -3639,7 +3759,7 @@ html {
 
     .margin>h2 {
         font-family: 'Pretendard_SB';
-                font-size: 2.5vh;
+        font-size: 2.5vh;
 
     }
 
