@@ -3495,7 +3495,7 @@ html {
         color: #FFA7A7;
     }
 
-    .btn_hover>.P_btn:active {
+    .btn_hover>.P_btn.active {
         background: #FFA7A7;
         color: #ffffff;
     }
@@ -3505,7 +3505,7 @@ html {
         color: #62B6CB;
     }
 
-    .btn_hover>.B_btn:active {
+    .btn_hover>.B_btn.active {
         background: #62B6CB;
         color: #ffffff;
     }
