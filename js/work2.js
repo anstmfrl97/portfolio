@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         link.classList.add("active");
     }
 
+
     if (window.innerWidth >= 768) {
         //스크롤 스냅 + 네비 버튼 동기화
         mainSnapTargets.forEach((section, index) => {
@@ -330,4 +331,14 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     });
+        // 버튼 클릭 이벤트
+const button_P = document.getElementById('P_btn');
+const button_B = document.getElementById('B_btn');
+
+button_P.addEventListener('click', () => {
+    button_P.classList.toggle('active');
+});
+button_B.addEventListener('click', () => {
+    button_B.classList.toggle('active');
+});
 })
