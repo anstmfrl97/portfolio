@@ -303,6 +303,25 @@ li {
         align-items: start;
         gap: 3vh 0;
     }
+            .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 3vh;
+    }
+
+    .work1_text_box .tool_icon>.photo,
+    .work1_text_box .tool_icon>.illust,
+    .work1_text_box .tool_icon>.figma,
+    .work1_text_box .tool_icon>.java {
+        width: 9%;
+    }
+
+    .work1_text_box .tool_icon>.html,
+    .work1_text_box .tool_icon>.css {
+        width: 8%;
+    }
 
     .work1_text_box>.work_text_group>h3 {
         font-family: 'Pretendard_L';
@@ -839,6 +858,26 @@ li {
         align-items: start;
         gap: 3vh 0;
     }
+        .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 3vh;
+    }
+
+    .work1_text_box .tool_icon>.photo,
+    .work1_text_box .tool_icon>.illust,
+    .work1_text_box .tool_icon>.figma,
+    .work1_text_box .tool_icon>.java {
+        width: 8%;
+    }
+
+    .work1_text_box .tool_icon>.html,
+    .work1_text_box .tool_icon>.css {
+        width: 7%;
+    }
+
 
     .work1_text_box>.work_text_group>h3 {
         font-family: 'Pretendard_L';
@@ -1441,6 +1480,25 @@ li {
         display: flex;
         flex-direction: column;
         align-items: start;
+    }
+        .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 2vh;
+    }
+
+    .work1_text_box .tool_icon>.photo,
+    .work1_text_box .tool_icon>.illust,
+    .work1_text_box .tool_icon>.figma,
+    .work1_text_box .tool_icon>.java {
+        width: 9%;
+    }
+
+    .work1_text_box .tool_icon>.html,
+    .work1_text_box .tool_icon>.css {
+        width: 7%;
     }
 
     .work1_text_box>h3:nth-child(odd) {

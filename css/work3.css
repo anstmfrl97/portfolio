@@ -326,6 +326,25 @@ html {
         gap: 3vh 0;
         width: 150%;
     }
+            .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 3vh;
+    }
+
+    .work3_text_box .tool_icon>.photo,
+    .work3_text_box .tool_icon>.illust,
+    .work3_text_box .tool_icon>.figma,
+    .work3_text_box .tool_icon>.java {
+        width: 7%;
+    }
+
+    .work3_text_box .tool_icon>.html,
+    .work3_text_box .tool_icon>.css {
+        width: 6%;
+    }
 
     .work3_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';
@@ -1353,7 +1372,25 @@ html {
         gap: 3vh 0;
         width: 150%;
     }
+        .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 3vh;
+    }
 
+    .work3_text_box .tool_icon>.photo,
+    .work3_text_box .tool_icon>.illust,
+    .work3_text_box .tool_icon>.figma,
+    .work3_text_box .tool_icon>.java {
+        width: 7%;
+    }
+
+    .work3_text_box .tool_icon>.html,
+    .work3_text_box .tool_icon>.css {
+        width: 6%;
+    }
     .work3_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';
         letter-spacing: 3px;
@@ -2469,6 +2506,26 @@ html {
         flex-direction: column;
         align-items: start;
     }
+
+        .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 2vh;
+    }
+    .work3_text_box .tool_icon>.photo,
+    .work3_text_box .tool_icon>.illust,
+    .work3_text_box .tool_icon>.figma,
+    .work3_text_box .tool_icon>.java {
+        width: 9%;
+    }
+
+    .work3_text_box .tool_icon>.html,
+    .work3_text_box .tool_icon>.css {
+        width: 8%;
+    }
+
 
     .work3_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';

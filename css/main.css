@@ -156,64 +156,64 @@ html {
     }
 
     /* 전체 화면 덮는 배경 (alert의 반투명 배경 역할) */
-#custom-alert-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* 배경색과 투명도 조절 가능 */
-    display: flex;
-    /* 중앙 정렬을 위한 설정 */
-    justify-content: center;
-    align-items: center;
-    z-index: 999999;
-}
+    #custom-alert-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* 배경색과 투명도 조절 가능 */
+        display: flex;
+        /* 중앙 정렬을 위한 설정 */
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+    }
 
-/* 모달 내용 박스 (스타일 지정 가능!) */
-.modal-content {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 2% 4%;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
-    text-align: center;
-    font-family: 'PC';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4vh;
-}
+    /* 모달 내용 박스 (스타일 지정 가능!) */
+    .modal-content {
+        background-color: rgba(255, 255, 255, 1);
+        padding: 2% 4%;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+        text-align: center;
+        font-family: 'PC';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4vh;
+    }
 
-.modal-content>h3 {
-    color: #000;
-    font-family: 'Pretendard_SB';
-}
+    .modal-content>h3 {
+        color: #000;
+        font-family: 'Pretendard_SB';
+    }
 
-.modal-content>h2 {
-    color: #000;
-    font-family: 'PC';
-}
+    .modal-content>h2 {
+        color: #000;
+        font-family: 'PC';
+    }
 
-/* 버튼 스타일 */
-#close-custom-alert {
-    padding: 2% 7%;
-    background-color: #A648ED;
-    color: white;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    font-size: 2.2vh;
-    font-family: 'Pretendard_R';
-}
+    /* 버튼 스타일 */
+    #close-custom-alert {
+        padding: 2% 7%;
+        background-color: #A648ED;
+        color: white;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        border: none;
+        border-radius: 999px;
+        cursor: pointer;
+        font-size: 2.2vh;
+        font-family: 'Pretendard_R';
+    }
 
-/* 숨김 처리 */
-.hidden {
-    display: none !important;
-}
-    
+    /* 숨김 처리 */
+    .hidden {
+        display: none !important;
+    }
+
 
     /* bagic style */
     #wrap>section {
@@ -864,7 +864,7 @@ html {
     .work_con_B>.work1Img {
         position: absolute;
         top: 0;
-        right: 10vh;
+        right: 0vh;
         width: 60%;
 
     }
@@ -879,7 +879,7 @@ html {
     .work_con_B>.work3Img {
         position: absolute;
         top: -15vh;
-        right: 0;
+        right: -6%;
         width: 65%;
     }
 
@@ -895,18 +895,66 @@ html {
 
     .work2_con_right {
         position: absolute;
-        right: 10vh;
+        right: -20vh;
         top: 0vh;
     }
 
 
-    .work1_text_box,
-    .work2_text_box,
-    .work3_text_box {
+    .work1_text_box {
         display: grid;
         grid-template-columns: 1fr 4fr;
         align-items: start;
         gap: 3vh 0;
+    }
+    .work2_text_box,
+    .work3_text_box {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        align-items: start;
+        gap: 3vh 0;
+    }
+
+        .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 3vh;
+    }
+
+    .work1_text_box .tool_icon>.photo,
+    .work1_text_box .tool_icon>.illust,
+    .work1_text_box .tool_icon>.figma,
+    .work1_text_box .tool_icon>.java {
+        width: 6%;
+    }
+
+    .work1_text_box .tool_icon>.html,
+    .work1_text_box .tool_icon>.css {
+        width: 5%;
+    }
+    .work2_text_box .tool_icon>.photo,
+    .work2_text_box .tool_icon>.illust,
+    .work2_text_box .tool_icon>.figma,
+    .work2_text_box .tool_icon>.java {
+        width: 4%;
+    }
+
+    .work2_text_box .tool_icon>.html,
+    .work2_text_box .tool_icon>.css {
+        width: 4%;
+    }
+
+    .work3_text_box .tool_icon>.photo,
+    .work3_text_box .tool_icon>.illust,
+    .work3_text_box .tool_icon>.figma,
+    .work3_text_box .tool_icon>.java {
+        width: 4%;
+    }
+
+    .work3_text_box .tool_icon>.html,
+    .work3_text_box .tool_icon>.css {
+        width: 4%;
     }
 
     .work h2 {
@@ -1323,63 +1371,63 @@ html {
     }
 
     /* 전체 화면 덮는 배경 (alert의 반투명 배경 역할) */
-#custom-alert-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    /* 배경색과 투명도 조절 가능 */
-    display: flex;
-    /* 중앙 정렬을 위한 설정 */
-    justify-content: center;
-    align-items: center;
-    z-index: 999999;
-}
+    #custom-alert-modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        /* 배경색과 투명도 조절 가능 */
+        display: flex;
+        /* 중앙 정렬을 위한 설정 */
+        justify-content: center;
+        align-items: center;
+        z-index: 999999;
+    }
 
-/* 모달 내용 박스 (스타일 지정 가능!) */
-.modal-content {
-    background-color: rgba(255, 255, 255, 1);
-    padding: 2% 4%;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 1);
-    text-align: center;
-    font-family: 'PC';
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4vh;
-}
+    /* 모달 내용 박스 (스타일 지정 가능!) */
+    .modal-content {
+        background-color: rgba(255, 255, 255, 1);
+        padding: 2% 4%;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 1);
+        text-align: center;
+        font-family: 'PC';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 4vh;
+    }
 
-.modal-content>h3 {
-    color: #000;
-    font-family: 'Pretendard_SB';
-}
+    .modal-content>h3 {
+        color: #000;
+        font-family: 'Pretendard_SB';
+    }
 
-.modal-content>h2 {
-    color: #000;
-    font-family: 'PC';
-}
+    .modal-content>h2 {
+        color: #000;
+        font-family: 'PC';
+    }
 
-/* 버튼 스타일 */
-#close-custom-alert {
-    padding: 2% 7%;
-    background-color: #A648ED;
-    color: white;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    font-size: 2.2vh;
-    font-family: 'Pretendard_R';
-}
+    /* 버튼 스타일 */
+    #close-custom-alert {
+        padding: 2% 7%;
+        background-color: #A648ED;
+        color: white;
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        border: none;
+        border-radius: 999px;
+        cursor: pointer;
+        font-size: 2.2vh;
+        font-family: 'Pretendard_R';
+    }
 
-/* 숨김 처리 */
-.hidden {
-    display: none !important;
-}
+    /* 숨김 처리 */
+    .hidden {
+        display: none !important;
+    }
 
     /* bagic style */
     #wrap>section {
@@ -2050,7 +2098,7 @@ html {
     .work_con_B>.work3Img {
         position: absolute;
         top: -18vh;
-        right: 3%;
+        right: -3%;
         width: 65%;
     }
 
@@ -2066,19 +2114,69 @@ html {
 
     .work2_con_right {
         position: absolute;
-        right: 10vh;
+        right: -50vh;
         top: 0vh;
     }
 
 
-    .work1_text_box,
-    .work2_text_box,
-    .work3_text_box {
+    .work1_text_box{
         display: grid;
         grid-template-columns: 1fr 4fr;
         align-items: start;
         gap: 3vh 0;
     }
+    .work2_text_box,
+    .work3_text_box {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        align-items: start;
+        gap: 3vh 0;
+    }
+
+    .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 3vh;
+    }
+
+    .work1_text_box .tool_icon>.photo,
+    .work1_text_box .tool_icon>.illust,
+    .work1_text_box .tool_icon>.figma,
+    .work1_text_box .tool_icon>.java {
+        width: 6%;
+    }
+
+    .work1_text_box .tool_icon>.html,
+    .work1_text_box .tool_icon>.css {
+        width: 5%;
+    }
+    .work2_text_box .tool_icon>.photo,
+    .work2_text_box .tool_icon>.illust,
+    .work2_text_box .tool_icon>.figma,
+    .work2_text_box .tool_icon>.java {
+        width: 4%;
+    }
+
+    .work2_text_box .tool_icon>.html,
+    .work2_text_box .tool_icon>.css {
+        width: 4%;
+    }
+
+    .work3_text_box .tool_icon>.photo,
+    .work3_text_box .tool_icon>.illust,
+    .work3_text_box .tool_icon>.figma,
+    .work3_text_box .tool_icon>.java {
+        width: 4%;
+    }
+
+    .work3_text_box .tool_icon>.html,
+    .work3_text_box .tool_icon>.css {
+        width: 4%;
+    }
+
+
 
     .work h2 {
         font-family: 'Pretendard_R';
@@ -2108,7 +2206,7 @@ html {
         justify-content: center;
         align-self: flex-start;
         gap: 5vh;
-        padding-left: 15vh;
+        padding-left: 22vh;
     }
 
     .work_btn>h4 {
@@ -3105,7 +3203,48 @@ html {
         gap: 5vh;
         z-index: 500;
     }
+    .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 2vh;
+    }
 
+    .work1_text_box .tool_icon>.photo,
+    .work1_text_box .tool_icon>.illust,
+    .work1_text_box .tool_icon>.figma,
+    .work1_text_box .tool_icon>.java {
+        width: 9%;
+    }
+
+    .work1_text_box .tool_icon>.html,
+    .work1_text_box .tool_icon>.css {
+        width: 7%;
+    }
+    .work2_text_box .tool_icon>.photo,
+    .work2_text_box .tool_icon>.illust,
+    .work2_text_box .tool_icon>.figma,
+    .work2_text_box .tool_icon>.java {
+        width: 9%;
+    }
+
+    .work2_text_box .tool_icon>.html,
+    .work2_text_box .tool_icon>.css {
+        width:8%;
+    }
+
+    .work3_text_box .tool_icon>.photo,
+    .work3_text_box .tool_icon>.illust,
+    .work3_text_box .tool_icon>.figma,
+    .work3_text_box .tool_icon>.java {
+        width: 9%;
+    }
+
+    .work3_text_box .tool_icon>.html,
+    .work3_text_box .tool_icon>.css {
+        width: 8%;
+    }
     .work1_text_box>h3:nth-child(odd),
     .work2_text_box>h3:nth-child(odd),
     .work3_text_box>h3:nth-child(odd) {

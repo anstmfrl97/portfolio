@@ -318,6 +318,25 @@ html {
         align-items: start;
         gap: 3vh 0;
     }
+            .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 3vh;
+    }
+    .work2_text_box .tool_icon>.photo,
+    .work2_text_box .tool_icon>.illust,
+    .work2_text_box .tool_icon>.figma,
+    .work2_text_box .tool_icon>.java {
+        width: 7%;
+    }
+
+    .work2_text_box .tool_icon>.html,
+    .work2_text_box .tool_icon>.css {
+        width: 6%;
+    }
+
 
     .work2_text_box>h3:nth-child(odd) {
         font-family: 'Pretendard_SB';
@@ -1530,12 +1549,30 @@ html {
         gap: 5vh;
     }
 
-
     .work2_text_box {
         display: grid;
         grid-template-columns: 1fr 4fr;
         align-items: start;
         gap: 3vh 0;
+    }
+    .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 3vh;
+    }
+
+    .work2_text_box .tool_icon>.photo,
+    .work2_text_box .tool_icon>.illust,
+    .work2_text_box .tool_icon>.figma,
+    .work2_text_box .tool_icon>.java {
+        width: 6%;
+    }
+
+    .work2_text_box .tool_icon>.html,
+    .work2_text_box .tool_icon>.css {
+        width: 5%;
     }
 
     .work2_text_box>h3:nth-child(odd) {
@@ -2847,6 +2884,26 @@ html {
         display: flex;
         flex-direction: column;
         align-items: start;
+    }
+
+        .tool_icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: start;
+        gap: 2vh;
+    }
+
+    .work2_text_box .tool_icon>.photo,
+    .work2_text_box .tool_icon>.illust,
+    .work2_text_box .tool_icon>.figma,
+    .work2_text_box .tool_icon>.java {
+        width: 9%;
+    }
+
+    .work2_text_box .tool_icon>.html,
+    .work2_text_box .tool_icon>.css {
+        width:8%;
     }
 
     .work2_text_box>h3:nth-child(odd) {
